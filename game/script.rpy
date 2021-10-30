@@ -16,9 +16,9 @@ define s = Character(" ")
 define p = Character("[povname]")
 define a = Character(" ", what_color="ffffff")
 define m = Character(" ", what_color="f60609")
-define b = Character("Shin", what_font="cabinvariable.ttf", what_color="ffffff", window_background="textboxnew.png")
+define b = Character("Шин", what_font="cabinvariable.ttf", what_color="ffffff", window_background="textboxnew.png")
 define w = Character("???", what_font="cabinvariable.ttf", what_color="ffffff", window_background="textboxnew.png")
-define c = Character("Sou", what_font="cabinvariable.ttf", what_color="ffffff", window_background="textboxnew.png")
+define c = Character("Соу", what_font="cabinvariable.ttf", what_color="ffffff", window_background="textboxnew.png")
 define pov = Character(" ", what_font="cabinvariable.ttf", what_color="ffffff", window_background="textboxnew.png")
 
 
@@ -29,9 +29,8 @@ label start:
 
 
 
-    $ points = 50
-    $ quiz_score = 0
-    $ name_list = ["sou", "hiyori", "sou hiyori", "hiyori sou", "SOU", "HIORI", "HIYORI SOU", "SOU HIYORI"]
+        $ points = 50
+    $ name_list = ["соу", "хиёри", "соу хиёри", "хиёри соу", "СОУ", "ХИЁРИ", "ХИЁРИ СОУ", "СОУ ХИЁРИ"]
 
 
 
@@ -43,32 +42,32 @@ label start:
 
 
 
-    a "> While the rest of the group is exploring the floor, you decide to risk it and stay behind."
+    a "> Когда остальная часть группы исследовала этаж, ты решила рискнуть и остаться позади."
 
-    a "> You've noticed this room in the corner of the corridor a while ago, and yet others prefered to ignore it for some reason."
+    a "> Ты недавно заметила эту комнату в углу коридора, но другие решили игнорировать её по некоторым причинам."
 
-    a "> Maybe it's not a bad idea to go inside and search through it while others are gone."
+    a "> Может быть это не плохая идея, чтобы зайти внутрь и поискать там, пока остальных нет."
 
-    a "> You slow down your steps and then turn back completely."
+    a "> Ты замедляешь свой шаг, затем полностью поворачиваешь назад."
 
-    a "> Fortunately, the door isn't locked."
+    a "> К счастью, дверь была не заперта."
 
     scene bg monitor room
     with dissolve
 
     a "> . . . ."
 
-    a "> At first, you don't see anything of interest. Or dangerous, at least."
+    a "> Сначала ты не увидела ничего интересного... или опасного, пока что."
 
-    a "> The room has a bunch of screens and keyboards, and lots of other technical equipment."
+    a "> Комната была заполнена мониторами и кнопками, так же куча другим техническим оборудованием ."
 
-    a "> Seems like it's a Floormaster's room."
+    a "> Выглядит как комната Мастера этажа."
 
-    a "> Maybe you could just hack the system... But that's a bold claim. "
+    a "> Может быть ты могла  попробовать взломать систему... Но это было слишком смелое утверждение. "
 
-    a "> It's probably going to take more than just a password."
+    a "> Вероятно, для этого понадобиться больше, чем просто пароль."
 
-    a "> You decide to search the room thoroughly before the others found you. You don't have that much time."
+    a "> Ты решила тщательно обыскать комнату, пока другие не нашли тебя. У тебя было не так много времени."
 
     scene bg monitor room 1
     with hpunch
@@ -77,28 +76,28 @@ label start:
 
     a "> . . . ?"
 
-    a "> Hm?"
+    a "> Хм?"
 
     stop music fadeout 2
 
-    a "> The screen is.. on?"
+    a "> Монитор...включен?"
 
-    a "Look at it?"
+    a "Посмотреть туда?"
 
     menu:
-        "> Yes":
+        "> Да":
 
 
-            a "> You approach the screen carefully."
+            a "> Ты осторожно приближаешься к экрану."
 
-            "'Ah, no, you're not... Who are you? You shouldn't be here...'"
+            "'Ох, нет. Ты не... Кто ты? Ты не должна быть здесь...'"
 
-            a "> It's seems that the voice is coming from the working screen."
+            a "> Похоже, голос идёт из монитора."
 
             scene mon red
             with dissolve
 
-            a "> When you lean towards the screen, you don't expect to see a face."
+            a "> Приблизившись к экрану, ты не ожидала увидеть лицо."
 
             play sound computer
             scene mon shin
@@ -107,14 +106,14 @@ label start:
 
 
 
-            "'P-please, leave this room... You'll be in trouble! If you leave right now I won't tell anybody, I promise.'"
-        "> No":
+            "'П-пожалуйста, покинь эту комнату... У тебя будут проблемы! Если ты уйдёшь прямо сейчас, я ни кому не скажу, что ты была здесь, я обещаю.'"
+        "> Нет":
 
-            a "> You decide to mind your business. It could be a trap."
+            a "> Ты решила заняться своими делами. Это могло быть ловушкой."
 
-            a "> When you're done exploring the room without touching anything, you get ready to leave."
+            a "> Закончив исследовать комнату без прикосновения к чему-то, ты уже собиралась уходить."
 
-            a "> But then... you hear a voice."
+            a "> Но затем... Услышала голос."
 
             scene mon red
             with dissolve
@@ -127,24 +126,24 @@ label start:
 
 
 
-            "'Um... Hiyori-kun, is that you?'"
+            "'Эм... Хиёри, это ты?'"
 
     menu:
-        "> Is this a trap?":
-            a "> You pull a chair closer to the working monitor to take a seat."
+        "> Это ловушка?":
+            a "> Ты придвигаешь стул ближе к рабочему монитору, чтобы сесть."
 
-            a "> You've already seen the AIs before, and it probably wouldn't hurt you in any way. At least, too hard."
+            a "> Ты уже видела ИИ до этого, и этот вероятно не причинит тебе вреда. По крайне мере, не слишком сильно."
 
-            "'I... I don't understand what you're talking about...'"
+            "'Я... Я не понимаю о чём ты говоришь...'"
 
-            "'This room could be dangerous, b-but that's not because of me...'"
+            "'Эта комната может быть опасной, но не из-за меня...'"
 
-            "'I mean, I would gladly help if anything happened... I can do that!'"
+            "'Я имею в виду, я был бы рад помочь, если что нибудь случилось... Я смогу сделать это!'"
 
-            "'Ah! I mean! It's not like something is going to happen..!'"
+            "'Ох! То есть! Я не говорю, что должно что-то произойти..!'"
 
             jump who
-        "> Who are you?":
+        "> Кто ты?":
 
             jump who
 
@@ -160,30 +159,30 @@ label start:
     stop music fadeout 1
     play music denpa
 
-    "'I'm.. I'm just a normal person... AI, i mean... Are you a friend of Hiyori's?'"
+    "'Я.. Я просто обычный человек... ИИ, точнее... Ты друг Хиёри?'"
 
-    "'He told me that someone might come but... I didn't think it would be just one person.'"
+    "'Он сказал, что кто-то должен прийти... Но я не думал, что это будет только один человек.'"
 
     hide neutral1
     show sad2
 
-    "'Maybe.. something happened...'"
+    "'Может.. что-то произошло...'"
 
-    "'If you're not the only one, you should go back to the others... Being alone here is very dangerous...'"
+    "'Если ты не одна, то тебе будет лучше вернуться к другим... Быть здесь одной - очень опасно...'"
 
     menu:
-        "> That's very nice of you":
+        "> Это очень мило с твоей стороны":
             $ points += 1
             show bg love with dissolve
 
             hide sad2
             show shock1
-            "'Nice? W-why... You don't have to...'"
+            "'Мило? П-почему... Ты не должна...'"
 
-            "'I just... I just want to help... I am against violence.'"
+            "'Я просто... Я просто хочу помочь... Я против жестокости.'"
 
-            "'I really can't tell you much, but I won't hurt you...'"
-        "> Was someone here before me?":
+            "'Я действительно не могу рассказать много чего, но я не наврежу тебе...'"
+        "> Кто-то был здесь до меня?":
 
 
 
@@ -195,14 +194,14 @@ label start:
             hide sad2
             show neutral1
 
-            "'No, not at all...'"
+            "'Нет, не совсем...'"
 
-            "'Nobody was there... before you...'"
+            "'Никого не было здесь... до тебя...'"
 
-            "'Honestly, I've been alone for so long that I...'"
+            "'Честно, я был здесь один долгое время и...'"
 
-            "'I shouldn't talk to you, but... I'm so sorry, it's just... so quiet here...'"
-        "> If it's a trap, it's a stupid one":
+            "'Я не должен говорить с тобой, но... Мне жаль, просто... тут так тихо...'"
+        "> Если это ловушка, то самая идиотская":
 
 
 
@@ -212,50 +211,50 @@ label start:
 
             show nerv1
 
-            "'What? I-I mean, you and me are on equal terms here, I'm...'"
+            "'Что? Я-я имею в виду, мы с тобою здесь на равных, я...'"
 
-            "'I'm just... I'm just trying to help... I am against violence.'"
+            "'Я просто... Я просто пытаюсь помочь... Я против жестокости.'"
 
             hide nerv1
             show sad2
 
-            "'I really can't tell you much, but I won't hurt you...'"
+            "'Я правда не могу рассказать тебе многого, но я не наврежу тебе...'"
 
 
     show bg neutral with dissolve
 
     show neutral2
 
-    "'Oh! I forgot to introduce myself!..'"
+    "'Ох! Я забыл представиться!..'"
 
     hide neutral2
     show happ1
 
-    "'My name is Shin...'"
+    "'Меня зовут Шин...'"
 
     hide happ1
     show happ3
 
-    "'I'm sorry if it's asking too much but... Can you tell your name too?'"
+    "'Прости, если прошу слишком много... Ты могла бы сказать своё имя тоже?'"
 
     hide happ3
     show neutral1
 
-    "'You can keep it a secret if you want... I don't mind.'"
+    "'Ты можешь держать это в секрете, если хочешь... Я не возражаю.'"
 
     label name:
 
     menu:
-        "> My name is...":
+        "> Меня зовут...":
             $ points += 1
             $ nameset = True
 
             python:
-                povname = renpy.input("What is your name?", length=32)
+                povname = renpy.input("Как тебя зовут?", length=32)
                 povname = povname.strip()
 
 
-            if povname in ["sou", "hiyori", "sou hiyori", "hiyori sou", "SOU", "HIORI", "HIYORI SOU", "SOU HIYORI", "Sou", "Hiyori", "Sou Hiyori", "Hiyori Sou", "Hiyori-kun", "Hiyori-san"]:
+            if povname in ["соу", "хиёри", "соу хиёри", "хиёри соу", "СОУ", "ХИЁРИ", "ХИЁРИ СОУ", "СОУ ХИЁРИ", "Соу", "Хиёри", "Соу Хиёри", "Хиёри соу"]:
 
 
                 play sound accent401
@@ -269,96 +268,96 @@ label start:
                 hide scared1
                 show scared2
 
-                "'W-....'"
+                "'Ч-....'"
 
-                "'Ah...'"
+                "'Ох...'"
 
-                "'I just... I didn't-'"
+                "'Я просто... Я не-'"
 
                 hide scared2
                 show scared1
 
-                "'I'm sorry, for a second I just...'"
+                "'Извини, на секунду я просто...'"
 
                 hide scared1
                 show nerv1
 
                 play music denpa fadein 1
 
-                "'Are you sure this is your name?'"
+                "'Ты уверена, что это твоё имя?'"
 
                 menu:
-                    "> Yes":
+                    "> Да":
 
                         hide nerv1
                         show scared2
 
-                        "'...I see.'"
+                        "'...Понятно.'"
 
-                        "'It's just a bit surprising is all...'"
+                        "'Это просто немного удивительно, вот и всё...'"
 
                         hide scared2
                         show nerv1
 
-                        "'But if it's your name, then of course...'"
+                        "'Но если это твоё имя, конечно...'"
 
-                        "'Sorry I've made such a fuss...'"
+                        "'Извини, я навёл столько суматохи...'"
 
                         hide nerv1
                         show happ4
 
-                        "'It's great to get to know you, [povname]!'"
+                        "'Приятно познакомиться, [povname]!'"
 
                         show bg neutral with dissolve
                         hide happ4
                         show neutral2
 
-                        "'You know, it kind of reminded me the first time I've heard this name...'"
+                        "'Ты знаешь, это напомнило мне о том, когда я впервые услышал это имя...'"
 
-                        "'I had another uh... another friend at school back then.'"
+                        "'У меня был один эм... один друг в школе тогда.'"
 
                         hide neutral2
                         show nerv1
 
-                        "'Unfortunately, our friendship didn't last, and...'"
+                        "'К несчастью, наша дружба не продлилась долго и...'"
 
                         hide nerv1
                         show neutral1
 
-                        "'Ah! I'm sorry, you're probably not interested in that.'"
+                        "'Ох! Извини, ты наверное не заинтересована в этом.'"
 
-                        "'Can I help you in any way?'"
+                        "'Могу я тебе помочь в любом случае?'"
 
                         jump talk
-                    "> No, I'm just joking around":
+                    "> Нет, я просто шучу":
 
 
                         hide nerv1
                         show shock1
 
-                        "'Ah!'"
+                        "'Ох!'"
 
                         hide shock1
                         show nerv1
 
-                        "'T-that wasn't a nice one!...'"
+                        "'Это было не смешно!...'"
 
-                        "'But you've totally got me, haha...'"
+                        "'Но ты подловила меня, хаха...'"
 
-                        "'Sorry I've made such a fuss...'"
+                        "'Извини, я навёл столько суматохи...'"
 
                         show bg neutral with dissolve
                         hide nerv1
                         show happ3
 
-                        "'Do you mind telling me your actual name then?'"
+                        "'Ты не против сказать своё настоящее имя?'"
 
-                        "'Sorry If I'm insisting too much...'"
+                        "'Извини, если я слишком настаиваю...'"
 
                         hide happ3
                         show nerv1
 
-                        "'It's totally understandable if you don't want to share information about yourself.'"
+                        "'Это совершенно понятно, если ты не захочешь делиться своей информацией с другими.'"
 
 
 
@@ -437,9 +436,9 @@ label start:
                 hide neutral1
                 show happ2
 
-                "'Thank you!!'"
+                "'Спасибо!!'"
 
-                "'[povname]!... Nice to meet you!'"
+                "'[povname]!... Приятно познакомиться!'"
 
                 jump fren
 
@@ -451,22 +450,22 @@ label start:
                 hide happ2
                 show neutral2
 
-                "'You know, I once had a friend with the same name...'"
+                "'Ты знаешь, у меня раньше был друг с таким же именем...'"
 
-                "'Unfortunately, our friendship didn't last, and...'"
+                "'К несчастью, наша дружба не продлилась долго и...'"
 
                 hide neutral2
                 show nerv1
 
-                "'Ah! I'm sorry, you're probably not interested in that.'"
+                "'Ох! Извини, ты наверное не заинтересована в этом.'"
 
                 hide nerv1
                 show neutral1
 
-                "'Can I help you in any way?'"
+                "'Могу ли я тебе помочь в любом случае?'"
 
                 jump talk
-        "> I'd rather not. It could be dangerous.":
+        "> Не думаю. Это может быть опасно.":
 
             $ points -= 1
 
@@ -476,19 +475,19 @@ label start:
             hide neutral1
             show sad1
 
-            "'Oh... Okay...'"
+            "'Ох... Окей...'"
 
-            "'You know... I once had a friend who also was very cautious...'"
+            "'Ты знаешь... У меня был друг, который тоже всегда был очень осторжен...'"
 
             hide sad1
             show nerv1
 
-            "'Ah! I'm sorry, you're probably not interested in that.'"
+            "'Ох! Извини, ты наверное не заинтересована в этом.'"
 
             hide nerv1
             show neutral1
 
-            "'Can I help you in any way?'"
+            "'Могу ли я помочь тебе в любом случае?'"
 
 
             jump talk
@@ -502,7 +501,7 @@ label start:
     show neutral1
 
     menu:
-        "> And what happened to your friend?":
+        "> И что произошло с твои другом?":
             $ points += 1
 
 
@@ -511,14 +510,14 @@ label start:
             hide neutral1
             show neutral2
 
-            "'Y-you're interested in that?..'"
+            "'Т-ты заинтересована в этом?..'"
 
-            "'I don't know if I can talk about this...'"
+            "'Я не знаю, могу ли говорить об этом...'"
 
             hide neutral2
             show happ4
 
-            "'B-but I think I can trust you!.. Let me see...'"
+            "'Н-но думаю, что могу доверять тебе!.. Посмотрим...'"
 
             show bg neutral with dissolve
             hide happ4
@@ -526,40 +525,40 @@ label start:
 
 
 
-            "'I had a few friends in school to be honest... Things... never worked out.'"
+            "'У меня было пару друзей в школе, если честно... из этого никогда ничего не выходило.'"
 
 
-            "'Sometimes we would eat lunch on the roof... Complaining about our teachers.'"
+            "'Иногда мы вместе обедали на крыше... Жаловались на учителей.'"
 
             hide neutral1
             show sad2
 
-            "'They were a nice person. But they probably wouldn't call me their friend...'"
+            "'Они были хорошими людьми. Но вероятно, они не звали меня своим другом ...'"
 
             hide sad2
             show sad3
 
-            "'And when I met Hiyori, they... just disappeared.'"
+            "'И тогда я встретил Хиёри, и они... просто исчезли.'"
 
 
-            "'First they stopped talking to me, and then they transferred to another school.'"
+            "'Сначала они прекратили общаться со мной, а потом перевелись в другие школы.'"
 
             hide sad3
             show sad4
 
-            "'They never answered my messages too...'"
+            "'Они никогда не отвечали на мои сообщения...'"
 
-            "'And I was thinking I'd be able to consider them a friend.'"
+            "'Я думал, что могу считать их друзьями.'"
 
-            "'But the feeling wasn't mutual, it seems... As expected...'"
+            "'Видимо, это не было взаимно... Это было ожидаемо...'"
 
             hide sad4
             show sad5
 
-            "'Maybe I was too boring or... too annoying. Maybe both.'"
+            "'Может быть, я был слишком скучным или... слишком надоедливым. Может быть и то, и то.'"
 
             menu:
-                "> It's not true. I enjoy talking to you.":
+                "> Это не так. Мне нравится говорить с тобой.":
                     $ points += 1
 
                     scene
@@ -570,33 +569,33 @@ label start:
                     hide sad5
                     show shock1
 
-                    "'R-really?'"
+                    "'П-правда?'"
 
-                    "'I'm glad to know it!..'"
+                    "'Я рад знать это!..'"
 
                     hide shock1
                     show nerv1
 
-                    "'Even if I don't consider it to be true... It's still nice to hear.'"
+                    "'Даже если я не считаю это правдой... Всё равно приятно слышать это.'"
 
                     hide nerv1
                     show happ4
 
-                    "'I like talking to you too!'"
+                    "'Мне нравится разговарить с тобой тоже!'"
 
-                    "'I know, it doesn't sound sincere because I don't have anything else to do but...'"
+                    "'Я знаю, это звучит не искренее, потому что, мне не остаётся ничего другого, кроме этого, но...'"
 
                     hide happ4
                     show happ1
 
-                    "'I'm not lying. Thank you for listening to me.'"
+                    "'Я не лгу. Спасибо, что выслушала меня.'"
 
                     show bg neutral with dissolve
 
 
 
                     jump about
-                "> Did 'Hiyori-kun' tell you that?":
+                "> Неужели Хиёри сказал тебе это?":
 
                     $ points -= 1
 
@@ -608,31 +607,31 @@ label start:
 
                     show shock1
 
-                    "'Wh-what are you talking about?..'"
+                    "'О ч-чём ты говоришь?..'"
 
                     hide shock1
                     show sad1
 
-                    "'Hiyori-kun might be a little bit too overprotective, and sometimes he does weird things, but...'"
+                    "'Хиёри может быть слегка гиперопекающим, и иногда он делает странные вещи, но...'"
 
                     hide sad1
                     show sad2
 
-                    "'I don't think he's tied to that in any way...'"
+                    "'Я не думаю, что он связан с этим как-то...'"
 
-                    "'Maybe they just... didn't like that I got a new friend.'"
+                    "Может быть... им не понравилось, что я нашёл нового друга.'"
 
                     hide sad2
                     show sad5
 
-                    "'Yes... It's all my fault...'"
+                    "'Да... Это всё моя вина...'"
 
                     show bg neutral with dissolve
 
 
 
                     jump about
-        "> Do you know if there are any other hidden rooms?":
+        "> Ты знаешь, есть ли тут другие скрытые комнаты?":
 
             $ points += 0
 
@@ -642,31 +641,31 @@ label start:
 
             show neutral2
 
-            "'I... I'm not sure...'"
+            "'Я... Я не уверен...'"
 
-            "'There are some hidden rooms, but you wouldn't be able to access them...'"
+            "'Тут есть пару скрытых комнат, но ты не сможешь их открыть...'"
 
             hide neutral2
             show neutral1
 
-            "'You were able to go inside this room only because Hiyori-kun allows it.'"
+            "'Ты смогла зайти в эту комнату, только потому что, Хиёри позволил сделать это.'"
 
-            "Other rooms are for..."
+            "Другие комнаты для..."
 
             hide neutral1
             show sad5
 
-            "'I'm sorry.'"
+            "'Извини.'"
 
-            "'I can't talk about that.'"
+            "'Я не могу говорить об этом.'"
 
-            "'I won't betray him.'"
+            "'Я не хочу предасть его.'"
 
             show bg neutral with dissolve
 
 
             jump about
-        "> Do you just want me to ask you about your friend? You're a bad manipulator.":
+        "> Ты просто хочешь, чтобы я спросила о твоём друге? Ты плохой манипулятор.":
 
             $ points -= 1
 
@@ -678,33 +677,33 @@ label start:
 
             show shock1
 
-            "'N-no!..'"
+            "'Н-нет!..'"
 
             hide shock1
             show sad5
 
-            "'I... I'm sorry, I didn't mean for it to sound like that... You're right.'"
+            "'Я... Извини, я не хотел, чтобы это звучало так... Ты права.'"
 
-            "'I didn't mean to vent.'"
+            "'Я не хотел высказываться.'"
 
-            "'You probably have a lot on your mind already...'"
+            "'У тебя, наверное, итак уже много забот...'"
 
             hide sad5
             show sad4
 
-            "'I'm so sorry. I know I can be annoying at times...'"
+            "'Мне жаль. Я знаю, что могут быть надоедливым временами...'"
 
-            "'Or talk about things that I shouldn't bring up...'"
+            "'Или говорить о вещах, которых не должен был...'"
 
-            "'You're probably not enjoying our conversation from the very start...'"
+            "'Ты, наверное, не наслаждаешься нашим разговорм с самого начала...'"
 
             hide sad4
             show sad5
 
-            "'I'm very sorry.'"
+            "'Мне очень жаль.'"
 
             menu:
-                "> That's not true. I didn't mean to sound rude.":
+                "> Это не так. Я не хотела звучать грубо.":
                     $ points += 0
 
 
@@ -713,27 +712,27 @@ label start:
 
                     show sad1
 
-                    "'...Okay.'"
+                    "'...Хорошо.'"
 
                     hide sad1
                     show sad2
 
-                    "'Just let me know if... If I'm being too annoying, okay?'"
+                    "'Дай мне знать, если... Если я буду слишком надоедлив, окей?'"
 
-                    "'I don't want to be a burden...'"
+                    "'Я не хочу быть обузой...'"
 
-                    "'Or to stall you.'"
+                    "'Или задержать тебя.'"
 
                     hide sad2
                     show sad3
 
-                    "'I just want what's best for everyone...'"
+                    "'Я просто хочу лучшего для всех...'"
 
                     show bg neutral with dissolve
 
 
                     jump about
-                "> You haven't said anything useful and you don't know when to stop talking.":
+                "> Ты не сказал ничего полезного и не знаешь, когда нужно прекратить говорить.":
 
 
                     scene
@@ -748,14 +747,14 @@ label start:
 
                     "'. . . !'"
 
-                    "'... I'm s-sorry.'"
+                    "'... Мне ж-жаль.'"
 
                     show bg sad with dissolve
                     hide shock1
                     show sad5
 
 
-                    "'I'm really sorry that...'"
+                    "'Я правда извиняюсь за это...'"
 
                     show bg afraid with dissolve
 
@@ -764,15 +763,13 @@ label start:
 
                     play sound kirekake
 
-                    "'I'm sorry. I won't bother you anymore.'"
+                    "'Мне жаль. Я не побеспокою тебя больше.'"
 
                     hide cry1
                     show bye1 with hpunch
 
 
-                    "'I wish you only the best.'"
-
-                    stop sound
+                    "'Я желаю тебе всего наилучшего.'"
 
                     hide bye1
 
@@ -782,33 +779,33 @@ label start:
 
                     scene mon red with dissolve
 
-                    a "> The friendly face had been suddenly consumed by the bright light."
+                    a "> Дружелюбное лицо внезапно поглотил яркий свет."
 
-                    a "> Before you were able to aknowledge it, the whole monitor is burning red again."
+                    a "> До того, как ты поняла это, весь монитор стал красным, снова."
 
-                    a "> Well. That was expected."
+                    a "> Чтож. Это было ожидаемо."
 
-                    a "> You get up with a tired sigh."
+                    a "> Ты встала с усталым вздохом."
 
                     scene bg black with dissolve
                     pause (1.0)
 
-                    a "> And this is when... You understand."
+                    a "> И тогда... Ты поняла."
 
                     scene 1111 with dissolve
                     play music heart_beat01 fadein 1
 
-                    a "> Something's not right."
+                    a "> Что-то не так."
 
                     a "> . . ."
 
-                    a "> You feel an unberable tension going through your body and making you completely still."
+                    a "> Ты чувствуешь, как невыносимое напряжение проходит через твоё тело и делает тебя совершенно неподвижной."
 
-                    a "> There's someone else... in the room."
+                    a "> Кто-то есть... в этой комнате."
 
-                    a "> You can't hear the steps nor the breathing, but you feel it."
+                    a "> Ты не слышишь шагов или дыхания, но ощущаешь это."
 
-                    a "> You feel a heavy gaze on the back of your head."
+                    a "> Ты чувствуешь тяжёлый взгляд на своём затылке."
 
                     a "> . . . !"
 
@@ -817,7 +814,7 @@ label start:
                     scene bg black with hpunch
                     pause (2.0)
 
-                    "END 1"
+                    "Концовка 1"
 
                     return
 
@@ -830,7 +827,7 @@ label start:
     show hz1
 
     menu:
-        "> You're speaking a lot about others... Tell me some more about yourself, maybe?":
+        "> Ты говоришь много о других... Может быть, ты расскажешь немного о себе?":
             $ points += 1
 
             scene
@@ -841,36 +838,36 @@ label start:
 
             show neutral1
 
-            "'About others...'"
+            "'О других...'"
 
-            "'To be honest, I don't have any other topics to bring up...'"
+            "'Если честно, у меня нет других тем для разговора...'"
 
-            "'Even though I never had much acquaintances...'"
+            "'Да и знакомых много не было...'"
 
             hide neutral1
             show sad2
 
-            "'About myself... Oh, what can I say about myself?'"
+            "'О себе... Ох, что я могу рассказать о себе?'"
 
             show bg neutral with dissolve
 
             show neutral2
 
 
-            "'I'm a pretty boring person... Nothing special at all.'"
+            "'Я довольно скучная личность... Ничего особенного во мне нет.'"
 
-            "'I'm just a simple job-hopper.'"
+            "'Я просто обычный джоб-хоппер.'"
 
-            "'I've worked in the grocery stores for the most of it... Absolutely nothing special.'"
+            "'Большую часть времени я работал в продуктовых магазинах... Ничего особенного.'"
 
             hide neutral2
             show happ3
 
-            "'What would you like to know? I don't have much useful information for you, to be honest...'"
+            "'Что ты хочешь узнать? У меня не так много полезной информации для тебя, если честно...'"
 
 
             menu:
-                "> Everything about you is interesting and useful. What do you usually do in here, for example?":
+                "> Всё насчёт тебя интересно и полезно. Что ты обычно делаешь здесь, к примеру?":
                     $ points += 1
 
                     scene
@@ -883,56 +880,56 @@ label start:
 
                     "'. . !'"
 
-                    "'O-oh, I...'"
+                    "'О-ох, Я...'"
 
                     hide shock1
                     show nerv1
 
-                    "'I'm not even sure where to start!..'"
+                    "'Я даже не знаю с чего начать!..'"
 
-                    "'C-cause there's nothing to start with...'"
+                    "'П-потому что, с нечего даже начать...'"
 
                     hide nerv1
                     show neutral2
 
-                    "'Usually, I just... Wait for Hiyori-kun to come back...'"
+                    "'Обычно, я просто... Жду, когда Хиёри вернётся...'"
 
-                    "'He's against me talking to others, though...'"
+                    "'Но он против того, чтобы я разговаривал с другими...'"
 
                     hide neutral2
                     show happ1
 
-                    "'But Maple-san is really nice. She always asks if I would like some tea, and... haha...'"
+                    "'Но Мэйпл очень милая. Она всегда спрашивает, не хотел бы я чая и... хаха...'"
 
                     hide happ1
                     show nerv1
 
-                    "'I can't drink it, of course. Even though I'd really love to.'"
+                    "'Я не могу пить, конечно же. Но я бы очень хотел.'"
 
                     hide nerv1
                     show neutral1
 
-                    "'Other than that... There's nothing else to do...'"
+                    "'Кроме этого... Здесь нечего делать...'"
 
                     "'. . .'"
 
                     hide neutral1
                     show happ2
 
-                    "'I'm really happy you asked me, though...'"
+                    "'Но я действительно рад, что ты спросила меня...'"
 
                     show bg neutral with dissolve
                     hide neutral1
                     show happ2
 
-                    "'Hiyori also asks me a lot about my interests and so on... However, I don't really understand why.'"
+                    "'Хиёри так же спрашивал меня, насчёт моих интересов и многом другом, и так далее... Так или иначе, я правда не понимаю почему.'"
 
                     hide happ2
                     show neutral2
 
-                    "'He knows everything already.'"
+                    "'Он знает уже всё.'"
 
-                    "'But I can't really say 'no' when he asks me to tell it all over again...'"
+                    "'Но я не могу сказать 'нет',когда он просит рассказать всё это снова...'"
 
                     hide neutral2
                     show sad1
@@ -942,14 +939,14 @@ label start:
                     hide sad1
                     show nerv1
 
-                    "'I'm s-sorry!... I'm talking about him again...Behind his back...'"
+                    "'И-извини!... Я снова говорю о нём...за его спиной...'"
 
-                    "'That's not very nice of me.'"
+                    "'Это не очень хорошо с моей стороеы.'"
 
 
 
                     jump notsorry
-                "> I've changed my mind. Let's talk about something else. Tell me more about Hiyori?":
+                "> Я передумала. Давай поговорим о чём-нибудь ещё. Расскажи мне больше о Хиёри?":
 
 
                     label hiyori:
@@ -970,28 +967,28 @@ label start:
                     hide sad1
                     show sad2
 
-                    "...I see..."
+                    "...Понятно..."
 
-                    "'Hiyori-kun, he's... Very peculiar.'"
+                    "Хиёри он... очень своебразный.'"
 
                     hide sad2
                     show nerv1
 
-                    "'He's my best friend, and yet... I mean, everyone's got their oddities, right?'"
+                    "'Он мой лучший друг, но всё же... Я имею в виду, у всех есть свои странности, верно?'"
 
                     hide nerv1
                     show neutral1
 
-                    "'But, despite that, he's... Very, very smart.'"
+                    "'Но, несмотря на это, он... очень очень умный.'"
 
-                    "'He's got a lot of friends. He's not like me...'"
+                    "'У него куча друзей. Он не как я...'"
 
                     hide neutral1
                     show sad2
 
-                    "'I can only wish of becoming more like him... Just, without the scary parts of it.'"
+                    "'Я могу только желать, быть более похожим на него... Только без этих жутких частей.'"
 
-                    "'No wonder you want to know more about him...'"
+                    "'Неудевительно, почему ты хочешь узнать о нём побольше...'"
 
                     hide sad2
                     show sad1
@@ -1001,34 +998,34 @@ label start:
                     hide sad1
                     show nerv1
 
-                    "'J-just... Be more careful, okay?..'"
+                    "'П-просто... Будт более осторожна, хорошо?..'"
 
-                    "'Sometimes I... Don't really feel safe around him...'"
+                    "'Иногда я... Не ощущаю себя в безопасности рядом с ним...'"
 
-                    "'Even though he'd never done anything bad or weird to me...'"
+                    "'Не то чтобы он делал что-то странное или плохое со мной, просто...'"
 
                     show bg neutral with dissolve
                     hide nerv1
                     show neutral1
 
-                    "'As I've mentioned before, he's just very peculiar...'"
+                    "'Как я сказал ранее, он очень своебразный...'"
 
-                    "'Maybe, it's his... gaze?'"
+                    "Может быть, это из-за его... взгляда?'"
 
                     hide neutral1
                     show sad1
 
-                    "'...Oh...'"
+                    "'...Ох...'"
 
                     hide sad1
                     show nerv1
 
-                    "'It's terrible to speak ill of your friends behind their back. I'm extremely sorry.'"
+                    "'Это ужасно говорить за спиной своих друзей. Мне очень жаль.'"
 
 
 
                     jump notsorry
-        "> Can you tell me about that 'Hiyori-kun'? I would like to know more, he seems more interesting than you.":
+        "> Ты можешь рассказать немного больше о Хиёри? Я хочу знать больше, он выглядит интереснее тебя.":
 
 
 
@@ -1040,7 +1037,7 @@ label start:
     show neutral2
 
     menu:
-        "> You're still a bit tense. Can I do something to make you feel better?":
+        "> Ты немного напряжён. Могу ли я что-то сделать для тебя?":
             $ points += 1
 
             scene
@@ -1051,22 +1048,22 @@ label start:
 
             show shock1
 
-            "'... T-tense?'"
+            "'... Н-напряжён?'"
 
             hide shock1
             show nerv1
 
-            "'N-not at all, I just... Stutter a lot.'"
+            "'Н-не совсем, я просто... много заикаюсь.'"
 
-            "'I think it has always been that way...'"
+            "'Я думаю, это всегда было у меня...'"
 
             hide nerv1
             show happ1
 
-            "'Trust me, I enjoy your company!'"
+            "'Поверь, я наслаждаюсь твоей компанией!'"
 
 
-            "'I feel at ease while talking to you... I truly do!'"
+            "'Я ощущаю себя легче, когда разговариваю с тобой... Правда!'"
 
             hide happ1
             show happ3
@@ -1078,24 +1075,24 @@ label start:
             show hz1
 
 
-            "'I know you'll have to leave, sooner or later...'"
+            "'Я знаю, что тебе придёться уйти, рано или поздно...'"
 
             hide hz1
             show sad1
 
-            "'Everyone does...'"
+            "'Всем приходилось...'"
 
             ". . ."
 
             hide sad1
             show happ4
 
-            "'But if we ever happen to meet again... I'd be very glad!..'"
+            "'Но если мы когда-нибудь ещё раз встретимся... Я был бы очень рад!..'"
 
             show bg neutral with dissolve
 
             jump touch
-        "> You don't have to apologize so much. I'm not judging you. We're friends after all.":
+        "> Тебе не нужно так много извиняться. Я тебя не осуждаю. В конце концов, мы друзья.":
 
             $ points += 0
 
@@ -1113,47 +1110,47 @@ label start:
             hide scared1
             show scared2
 
-            "'F... Friends?..'"
+            "'Д... Друзья?..'"
 
-            "'... Y-yeah, we're probably...'"
+            "'... Д-да, наверное мы...'"
 
-            "'I'm... I'm s-...'"
+            "'Я... Мне ж-...'"
 
             hide scared2
             show nerv1
 
-            "'Almost said it again... Haha...'"
+            "'Я почти сказал это снова... Хаха...'"
 
-            "'But... do you really see me as a friend?'"
+            "'Но... Ты правда видишь во мне друга?'"
 
             show bg neutral with dissolve
 
             show nerv1
             play music denpa fadein 1
 
-            "'I... Nobody called me that for so long...'"
+            "'Я... Никто не звал меня так очень давно...'"
 
             hide nerv1
             show sad1
 
-            "'I mean I barely know you!..'"
+            "'То есть, я почти знаю тебя!..'"
 
 
-            "'But still...'"
+            "'Но всё же...'"
 
             hide sad1
             show happ3
 
-            "'I'm glad I've had an apportunity to talk with someone...'"
+            "'Я рад, что у меня появилась возможность поговорить с кем-то...'"
 
             hide happ3
             show sad2
 
-            "'Someone else...'"
+            "'С кем-то другим...'"
 
 
             jump touch
-        "> I don't really understand how the AIs work. You shouldn't be able to be so nervous.":
+        "> Я не совсем понимаю, как работаю ИИ. Ты не должен быть таким напряжённым.":
 
             $ points -= 1
 
@@ -1165,37 +1162,37 @@ label start:
 
             show sad1
 
-            "'That's... not true...'"
+            "'Это... не так...'"
 
-            "'I can feel things...'"
+            "'Я могу чувствовать...'"
 
             hide sad1
             show sad2
 
-            "'I... I can feel fear just like you... And I am as confused as you are...'"
+            "'Я... Я могу испытывать страх, так же как и ты... И я так же запутан, как и ты...'"
 
-            "'Even if I'm just a code...'"
+            "'Даже если я всего лишь код...'"
 
             hide sad2
             show sad5
 
-            "'I still fear not existing.'"
+            "'Я до сих пор боюсь исчезнуть.'"
 
-            "'I'm afraid I'll become useless... Annoying... Worthless...'"
+            "'Я боюсь стать бесполезным... навязчивым... никчёмным...'"
 
-            "'Because then I'll be deleted for sure.'"
+            "'Потому что, тогда меня точно удалят.'"
 
             hide sad5
             show sad4
 
-            "'Like an old game you got tired of it.'"
+            "'Как старые игры, от которых ты устал.'"
 
             "'. . .'"
 
             hide sad4
             show sad5
 
-            "'You could break this screen so easily...'"
+            "'Ты можешь легко разбить экран...'"
 
             "'. . .'"
             show bg sad with dissolve
@@ -1208,10 +1205,10 @@ label start:
             hide scared1
             show scared2
 
-            "'Y-you wouldn't do that, would you?..'"
+            "'Т-ты же не станешь этого делать, в-верно?..'"
 
             menu:
-                "> Of course not. I'd take you and your monitor with me if I could.":
+                "> Конечно нет. Я бы забрала тебя и твой монитор, если бы могла.":
                     $ points += 1
 
                     scene
@@ -1228,21 +1225,21 @@ label start:
                     hide shock1
                     show nerv1
 
-                    "'Haha... I... I don't think it's that easy...'"
+                    "'Хаха... Я... Я не думаю, что это так легко...'"
 
-                    "'The monitor is probably heavy too... Haha...'"
+                    "'Монитор, наверное, очень тяжёлый... Хаха...'"
 
                     hide nerv1
                     show sad1
 
-                    "'Besides... I don't think I... can leave at all.'"
+                    "'Кроме того... Я не думаю, что...смогу уйти вообще.'"
 
-                    "'I don't want any trouble...'"
+                    "'Я не хочу никаких проблем...'"
                     show bg neutral with dissolve
 
 
                     jump touch
-                "> Even if I wanted to, it's too dangerous. Somebody wants you to stay there.":
+                "> Даже если бы я захотела, это было бы слишком опасно. Кто-то хочет, чтобы бы ты остался здесь.":
 
                     $ points -= 1
 
@@ -1255,23 +1252,23 @@ label start:
 
                     show sad2
 
-                    "'Ah...'"
+                    "'Ох...'"
 
-                    "'That's right...'"
+                    "'Точно...'"
 
                     hide sad2
                     show sad5
 
                     "'. . .'"
 
-                    "'I... I promise I don't want to harm you, really...'"
+                    "'Я... Я обещаю, что не хочу навредить тебе, правда...'"
 
-                    "'But... I can see why you can't trust me. I'm sorry.'"
+                    "'Но... Я могу понять, почему ты мне не доверяешь. Прости.'"
                     show bg neutral with dissolve
 
 
                     jump touch
-                "> Even if I destroy you, you probably have a back-up file or something. It's pointless.":
+                "> Даже если я уничтожу тебя, то, у тебя есть резервный файл или типо того. Это бессмыслено.":
 
                     $ points -= 1
 
@@ -1284,14 +1281,14 @@ label start:
 
                     "'! . .'"
 
-                    "'It's... It's not like that...'"
+                    "'Это... Это не совсем там...'"
 
 
                     show sad4
 
-                    "'Right now... I don't have any copies of myself...'"
+                    "'Прямо сейчас... У меня нет никаких копий себя...'"
 
-                    "'If you break this screen, I won't... recover...'"
+                    "'Если ты сломаешь экран, я не... восстановлюсь...'"
 
                     "'. . .'"
 
@@ -1300,7 +1297,7 @@ label start:
 
                     show scared1
 
-                    "'Wh-why are you looking at me like that?..'"
+                    "'П-почему ты так смотришь на меня?..'"
                     show bg neutral with dissolve
 
 
@@ -1314,35 +1311,35 @@ label start:
 
     show sad1
 
-    "'You know... I haven't spoke with someone for so long for a while...'"
+    "'Ты знаешь... Я не говорил с кем-то так много уже очень давно...'"
 
     hide sad1
     show neutral2
 
-    "'I mean, Hiyori-kun is a great listener, but...'"
+    "'То есть, Хиёри - прекрасный слушатель, но...'"
 
     hide neutral2
     show sad2
 
-    "'It's like... He does not participate in talking...'"
+    "'Это словно... Он вообще не участвует в разговоре...'"
 
-    "'But lately he upgraded my monitor to have a touch-screen, and now...'"
+    "'Но недавно он обновил мой монитор, чтобы у меня был сенсорный экран, и теперь...'"
 
     hide sad2
     show nerv1
 
-    "'All he does is poke me in the face...'"
+    "'Всё что он делает, так тычет моё лицо...'"
 
-    "'It's... a bit annoying!..'"
+    "'Это... немного раздражает!..'"
 
-    a "> He looks at you as if he's expecting something..."
+    a "> Он смотрит на тебя так, словно чего-то ожидает..."
 
-    a "> ...He's not very good at manipulating."
+    a "> ...Он не очень хорош в манипуляции."
 
-    a "> You're not sure if AI can feel anything, but you decide to try anyway."
+    a "> Ты не уверена, может ли ИИ, что- то чувствовать, но ты решила всё же попробовать."
 
     menu:
-        "> Pet his head":
+        "> Погладить его по голове":
 
             scene
             show bg neutral
@@ -1355,22 +1352,22 @@ label start:
 
             "'. . .'"
 
-            "'He... He's never done that before...'"
+            "'Он... Он никогда не делал такое раньше...'"
 
-            "'It's weird... But it feels nice...'"
+            "'Это странно... но ощущается приятно...'"
 
             hide pat3
             show happ2 with dissolve
 
-            "'...Thank you...'"
+            "'...Спасибо...'"
 
-            "'Usually he just pinches my cheeks...'"
+            "'Обычно, он просто дергает мои щёки...'"
 
             show bg neutral with dissolve
 
 
             jump hobby
-        "> Boop his nose":
+        "> Тыкнуть его нос":
 
 
             scene
@@ -1383,19 +1380,19 @@ label start:
 
             "'. . .'"
 
-            "'O-okay...'"
+            "'О-окей...'"
 
-            "'I can't really feel how warm your hands are but...'"
+            "'Я не могу чувствовать, как теплы твои руки, но...'"
 
             hide pat2
             show hz1 with dissolve
 
-            "'It feels a little weird...'"
+            "'Это немного странно...'"
 
             show bg neutral with dissolve
 
             jump hobby
-        "> Pinch his cheek":
+        "> Ущипнуть его за щёку":
 
 
             scene
@@ -1406,11 +1403,11 @@ label start:
             show pat1 with dissolve
             play sound squeaky_toy
 
-            "'Ow!..'"
+            "'Ау!..'"
 
             "'. . .'"
 
-            "'...Please, stop..."
+            "'...Пожалуйста, хватит..."
 
             "'. . .'"
 
@@ -1418,11 +1415,11 @@ label start:
             show sad1 with dissolve
             hide pat1
 
-            "'Hiyori-kun also does this to me...'"
+            "'Хиёри всегда делает так...'"
 
-            "'It doesn't hurt that much but...'"
+            "'Это не так больно, но всё же...'"
 
-            "'It's still unpleasant.'"
+            "'Это неприятно.'"
 
             show bg neutral with dissolve
 
@@ -1436,57 +1433,57 @@ label start:
     show bg neutral
     show nerv1
 
-    "'Oh!...'"
+    "'Ох!...'"
 
-    "'I think I am... making everything about myself...'"
+    "'Я думаю, что... говорю только о себе...'"
 
-    "'It's a bit embarassing, haha...'"
+    "'Это немного смущает, хаха...'"
 
     hide nerv1
     show neutral2
 
-    "'I'm sorry for not asking earlier but...'"
+    "'Извини, что не спросил раньше, но...'"
 
-    "'I'll understand if you don't want to share...'"
+    "'Я пойму, если ты не захочешь делиться...'"
 
-    "'Can you tell me a bit more about yourself?'"
+    "'Но ты можешь немного рассказать о себе?'"
 
     hide neutral2
     show neutral1
 
-    "'For example, I... Um...'"
+    "'К примеру, я... Эм...'"
 
     hide neutral1
     show happ3
 
-    "'I like video games!..'"
+    "'Я люблю видеоигры!..'"
 
     hide happ3
     show happ1
 
-    "'Especially multiplayer games...'"
+    "'Особенно с мультиплеером...'"
 
-    "'If it was possible to install some games here...'"
+    "'Если бы можно было установить парочку игр здесь...'"
 
     hide happ1
     show happ4
 
-    "'I'd happily play some with you!..'"
+    "'Я был бы счастлив поиграть с тобой!..'"
 
     hide happ4
     show nerv1
 
-    "'If you don't mind, of course!'"
+    "'Если ты не против, конечно!'"
 
-    "'It would be very nice...'"
+    "'Это было бы очень круто...'"
 
     hide nerv1
     show neutral1
 
-    "'Do you have any hobbies? What do you like to do in your free time?'"
+    "'У тебя есть хобби? Что ты любишь делать в свободное время?'"
 
     python:
-        povhobby = renpy.input("What do you like to do in your free time? (do not use CAPS)", length=32)
+        povhobby = renpy.input("Что ты любишь делать в свободное время?", length=32)
         povhobby = povhobby.strip()
 
     if povhobby in ["art", "ART", "Art", "drawing", "Drawing", "DRAWING", "making art", "Making art", "making Art", "Making Art"]:
@@ -1960,9 +1957,9 @@ label start:
 
         jump final
 
-    elif povhobby in ["sculpture", "Sculpture", "sculpting", "Sculpting", "to sculpt", "To sculpt"]:
+    elif povhobby in ["скульптуры", "Скульптуры", "скульптурирование", "Скульптурирование", "лепить", "Лепить"]:
 
-        if povname in ["sou", "hiyori", "sou hiyori", "hiyori sou", "SOU", "HIORI", "HIYORI SOU", "SOU HIYORI", "Sou", "Hiyori", "Sou Hiyori", "Hiyori Sou", "Hiyori-kun", "Hiyori-san"]:
+        if povname in ["соу", "хиёри", "соу хиёри", "хиёри соу", "Соу", "Хиёри", "Соу Хиёри", "Хиёри Соу"]:
 
             jump secret
         else:
@@ -1977,26 +1974,26 @@ label start:
 
             show neutral2
 
-            "'Sculpture?..'"
+            "'Скульптуры?..'"
 
             hide neutral2
             show nerv1
 
-            "'Haha... Sounds a bit familiar.'"
+            "'Ахах... Звучит слегка знакомо.'"
 
-            "'I don't know much about it, but I think...'"
+            "'Я не знаю об этом слишком много, но я думаю...'"
 
             hide nerv1
             show happ1
 
-            "'Hiyori once told me about that.'"
+            "'Хиёри однажды рассказывал мне об этом.'"
 
-            "'He told me that he enjoys doing that, as well as photography...'"
+            "'Он говорил, что наслаждается этим так же, как и фотографией...'"
 
             hide happ1
             show neutral2
 
-            "'I can't imagine doing something like that, making a solid object look soft and so alive...'"
+            "'Я не могу даже представить, чтобы делать что-то наподобие такого, заставляя твёрдые объекты выглядеть такими мягкими и живыми...'"
 
             jump goodboy
     else:
@@ -2540,26 +2537,26 @@ label secret:
 
     show neutral2
 
-    "'Sculpture?..'"
+    "'Скульптуры?..'"
 
-    hide neutral2
-    show nerv1
+                hide neutral2
+                show nerv1
 
-    "'Haha... Sounds a bit familiar.'"
+                "'Ахах... Звучит слегка знакомо.'"
 
-    "'I don't know much about it, but I think...'"
+                "'Я не знаю об этом слишком много, но я думаю...'"
 
-    hide nerv1
-    show happ1
+                hide nerv1
+                show happ1
 
-    "'Hiyori once told me about that.'"
+                "'Хиёри однажды рассказывал мне об этом.'"
 
-    "'He told me that he enjoys doing that, as well as photography...'"
+                "'Он говорил, что наслаждается этим так же, как и фотографией...'"
 
-    hide happ1
-    show neutral2
+                hide happ1
+                show neutral2
 
-    "'I can't imagine doing something like that, making a solid object look soft and so alive...'"
+                "'Я не могу даже представить, какого это делать что-то наподобие такого, заставляя твёрдые объекты выглядеть такими мягкими и живыми...'"
 
     hide neutral2
     show hz1
@@ -2567,20 +2564,20 @@ label secret:
 
     stop music fadeout 2
 
-    a "> Something's wrong."
+    a "> Что-то не так."
 
-    a "> You don't know why but for some reason every word he speaks makes you more and more nauseous."
+    a "> Ты не знаешь почему, но по какой-то причине каждое его слово вызывает у тебя все большую и большую тошноту."
 
-    a "> Your hands become cold and shaky."
+    a "> Твои руки становятся холодными и дрожащими."
 
-    a "> But you can't muster opening your mouth to tell him to stop."
+    a "> Но ты не можешь собраться и сказать ему остановится."
 
     hide hz1
     show happ1
 
-    "'Oh!.. I remember him showing me a couple of his works...'"
+    "'Ох!.. Я вспомнил, что он показывал мне пару своих работ...'"
 
-    "'They weren't finished, but... They still looked kinda cool!'"
+    "'Они были не закончены, но... Они всё равно выглядели довольно круто!'"
 
     hide happ1
     show hz1
@@ -2594,19 +2591,19 @@ label secret:
     hide hz1
     show nerv1
 
-    "'Hey...'"
+    "'Хэй...'"
 
-    "'Are you alright?'"
+    "'Ты в порядке?'"
 
-    "'You look pale...'"
+    "'Ты выглядишь бледной...'"
 
-    a "> It would be weird if you weren't pale in this situation."
+    a "> Это было бы странно, если бы ты не была бледной в такой ситуации."
 
-    a "> Something in his words made you terrified."
+    a "> Что-то в его словах заставило тебя бояться."
 
-    a "> Your hands balled into fists, as you looked around the room anxiously."
+    a "> Твои руки сжались в кулаки, когда ты с тревогой оглядела комнату."
 
-    a "> You can't make a sound. You're too busy desperately gasping for air."
+    a "> Ты не можешь издать и звука. Ты слишком занята, отчаянно хватая ртом воздух."
 
     scene
     show bg love
@@ -2616,21 +2613,21 @@ label secret:
 
     show scared1
 
-    "'H-hey!..'"
+    "'Х-хэй!..'"
 
-    "'I don't... There are some water bottles behind you, please take it!..'"
+    "'Я не... Где-то здесь должна быть бутылка воды позади тебя, пожалуйста, возьми её!..'"
 
     hide scared1
     show scared2 with hpunch
 
-    "'Please, st-...'"
+    "'Пожалуйста, оста-...'"
 
     scene bg black with dissolve
     stop music fadeout 2
 
-    a "> His voice becomes distant until it fades into nothing."
+    a "> Его голос становится далеким, пока не растворяется в пустоте."
 
-    a "> And then... darkness consumes you completely."
+    a "> И затем... темнота полностью охватывает тебя."
 
     window hide dissolve
 
@@ -2644,13 +2641,13 @@ label secret:
 
     pov "'. . ?'"
 
-    w "'Hey...'"
+    w "'Хэй...'"
 
-    w "'Shin...'"
+    w "'Шин...'"
 
-    w "'Wake up.'"
+    w "'Вставай.'"
 
-    b "'What...'"
+    b "'Что...'"
 
     scene shinsleep with dissolve
     pause(2.0)
@@ -2658,114 +2655,114 @@ label secret:
     scene shinwake with dissolve
     pause(1.0)
 
-    b "'Hmm...'"
+    b "'Хмм...'"
 
-    pov "You open your eyes and then instantly shut them back. The bright light makes your head hurt like hell."
+    pov "Ты открыл свои глаза, но потом сразу же зажмурился. Из-за яркого света твоя голова разболелась как в аду."
 
-    b "'Ugh...'"
+    b "'Агх...'"
 
-    w "'C'mon... You cannot sleep for the whole day.'"
+    w "'Давай... Ты не можешь спать весь день.'"
 
-    pov "You were... sleeping?"
+    pov "Ты был... сонным?"
 
-    pov "Slowly, you're becoming aware of your surroundings."
+    pov "Постепенно, ты начинаешь осознавать, где находишься."
 
     play music hazama2 fadein 3
 
     scene souroom with dissolve
     pause(1.0)
 
-    pov "Of course, you're not at your house. But this place had already become your second home."
+    pov "Конечно, ты не дома. Но это место уже стало твоим вторым домом."
 
-    pov "The undescribable anxiety fills you, strangely mixing with content, and it makes you wake up completely."
+    pov "Необъяснимая тревога наполняет тебя, страно смешиваясь с содержащим, и это заставляет тебя полностью проснуться."
 
-    pov "Is it evening already?"
+    pov "Уже вечер?"
 
-    b "'Ugh... My back hurts...'"
+    b "'Агх... Моя спина болит...'"
 
     show sou4 with dissolve
 
-    c "'Of course it does. I left to grab a cup of coffee, and you're already made yourself comfortable on the table.'"
+    c "'Конечно она будет. Я ушёл на пару минут, чтобы взять кружку кофе, а ты уже удобно разлёгся на столе.'"
 
-    c "'You could've taken the couch, you know... It's bad for your back!'"
+    c "'Ты мог бы занять диван, знаешь... Это плохо для твоей спины!'"
 
     hide sou4
     show sou3
 
-    c "'You might've fallen from the chair, or the monitor could fall on your head. It's quite heavy.'"
+    c "'Ты мог бы свалиться со стула или монитор мог упасть тебе на голову. Он довольно тяжёлый.'"
 
-    pov "You never thought about that. But now you will."
+    pov "Ты никогда не думал об этм раньше, но теперь видимо будешь."
 
-    pov "You can't remember when you fell asleep, but that doesn't bother you anymore."
+    pov "Ты не мог вспомнить, когда заснул, но это больше не беспокоило тебя."
 
     show sou3 at right with move
 
     show shin3 at left with dissolve
 
-    b "'Aha, yeah... It could...'"
+    b "'Аха, да... Это могло...'"
 
     hide shin3
     show shin4 at left
 
-    b "'D-do you mind if I take a proper nap? I don't feel that well...'"
+    b "'Т-ты не возражаешь, если я вздремну ещё раз? Я не очень хорошо себя чувствую...'"
 
     hide sou3
     show sou1 at right
 
-    c "'I don't mind, but are you sure you'll feel better?'"
+    c "'Я не против, но ты уверен, что почувствуешь себя лучше?'"
 
-    c "'You've already slept through the most of the day. Your head will hurt so much. Trust me, I know how that feels.'"
+    c "'Ты итак проспал большую часть дня. Твоя голова наверное болит очень сильно. Поверь мне, я знаю какого это.'"
 
     hide shin4
     show shin1 at left
 
 
-    b "'Mm... Maybe, you're right... My head hurts already...'"
+    b "'Мм... Может быть ты прав... Моя голова итак уже сильно болит...'"
 
-    pov "He's always right."
+    pov "Он всегда прав."
 
     hide sou1
     show sou12 at right
 
-    c "'Oh, I can help you to stay up!'"
+    c "'Ох, я могу помочь тебе окончательно проснуться!'"
 
-    c "'You promised you'll help me. Lets see...'"
+    c "'Ты пообещал, что поможешь мне. Итак...'"
 
     hide sou12
     show sou11 at right
 
-    c "'Do you remember the game I've shown you?'"
+    c "'Ты помнишь игру, которую я тебе показывал?'"
 
     hide shin1
     show shin6 at left
 
-    b "'Which one of all of your games?..'"
+    b "'Какую из?..'"
 
     hide sou11
     show sou14 at right
 
     play sound extend1
 
-    c "'Haha, your memory is giving up already? Not a good sign for your age.'"
+    c "'Хаха, твоя память уже начинает ухудшаться? Это не очень хороший знак, для твоего возраста.'"
 
     hide sou14
     show sou12 at right
 
-    c "'Good thing that you have me! No need to spend money on a doctor when you have these games.'"
+    c "'Хорошо, что у тебя есть я! Не нужно тратить кучу денег на доктора, когда у тебя есть эти игры.'"
 
     hide shin6
     show shin5 at left
 
     b "'. . .'"
 
-    b "'You mean that card game?'"
+    b "'Ты имеешь в виду, карточную игру?'"
 
     hide sou12
     show sou5 at right
 
-    c "'Bingo! You can remember anything if you really try to. See? My methods are working already!'"
+    c "'Бинго! Ты можешь запомнить всё что угодно, если просто постараешься. Видишь? Мои методы уже работают!'"
 
-    c "'Now, look at the screen.'"
+    c "'Теперь, посмотри на монитор.'"
 
     stop music fadeout 2
 
@@ -2779,64 +2776,64 @@ label secret:
 
     play music nounai fadein 2
 
-    c "'Alright, let's start with a simple one. Your brain must be full of cobwebs! Do you even remember what this game is about?'"
+    c "'Итак, давай начнём с простого. Твой мозг,должно быть, полон паутиной! Ты вообще помнишь, о чём эта игра?'"
 
-    b "'Uhh... It's like the Werewolf or Mafia game, right?'"
+    b "'Ухх... Это похоже на игру в'Оборотня' или 'Мафию', верно?'"
 
     show screen4
 
-    c "'Haha, almost. It's been a while since we've played this game, hasn't it?'"
+    c "'Хаха, почти. Прошло много времени с тех пор, как мы играли в эту игру, не так ли?'"
 
     play sound powerdown07
 
-    b "'Because it's almost impossible to play with only two of us...'"
+    b "'Потому что в это невозможно играть только вдвоём...'"
 
-    c "'That's right. But it doesn't matter, Shin.'"
+    c "'Точно. Но это не имеет значения, Шин.'"
 
     hide screen4
     show screen2
 
-    c "'The point of the game is to make sure nobody knows which card you have. Even if there are only two people left.'"
+    c "'Смысл этой игры, убедиться, что никто не знает, какая карта у тебя. Даже если осталось всего лишь два человека.'"
 
-    b "'Left?..'"
+    b "'Осталось?..'"
 
-    c "'Well, somebody's gonna lose when others learn which card they have.'"
+    c "'Ну, кто-то проиграет, если остальные узнают, какая у него карта.'"
 
-    c "'At some point it's gonna be one-on-one. I though you understood that.'"
+    c "'И в какой то момент, эта игра становится один на один. Я думал, ты это уже понял'"
 
-    b "'Right... S-sorry, I'm probably still sleepy.'"
+    b "'Точно... И-извини, я, наверное, все ещё сонный.'"
 
     hide screen2
     show screen4
 
-    c "'I can see that. That's why I am reminding you all that.'"
+    c "'Я вижу. Вот поэтому, я всё это напоминаю тебе.'"
 
-    c "'Sometimes the rules can be fake, as well as the cards themselves. That's why you should always keep the correct info in mind.'"
+    c "'Иногда правила могут быть фальшивыми, как и сами карты. Вот почему ты должен хранить верную информацию в своей голове.'"
 
-    b "'Aha... Isn't it too much for a simple card game?'"
+    b "'Аха... Разве это не слишком много для простой карточной игры?'"
 
-    c "'You're saying that you can't memorize even the basics?'"
+    c "'Ты хочешь сказать, что не можешь запомнить дажу основу?'"
 
-    c "'No wonder you never win against me.'"
+    c "'Неудивительно, почему ты никогда не можешь выйграть у меня.'"
 
-    b "'Uh... Sorry.'"
+    b "'Ух... Извини.'"
 
     hide screen4
     show screen2
 
-    c "'Let's get to it then.'"
+    c "'Давай тогда, перейдём к этому.'"
 
     show card1 zorder 1 with dissolve
     pause(2.0)
 
-    c "'Let's start with a simple one. Do you remember which card is a legit one?'"
+    c "'Начнём с простого. Ты помнишь, какая карта является верной?'"
 
     label firstq:
 
         menu:
-            "The one on the left":
+            "Та, что слева":
 
-                b "'The one on the left?..'"
+                b "'Та, что слева?..'"
 
                 label wrong1:
 
@@ -2846,30 +2843,30 @@ label secret:
 
                     play sound buzzer1
 
-                    c "'As I thought... You know, associative learning is one of the easiest ways to learn things. Too bad it doesn't work for you.'"
+                    c "'Как я и думал... Ты знаешь, ассоциативное обучение - один из самых простых способов обучения. Жаль, что это не работает для тебя.'"
 
-                    b "(Damn... It was wrong.)"
+                    b "(Чёрт...Это было неверно.)"
 
-                    c "'The correct one is on the right. One book, which is closed. See, easy to remember, right?'"
+                    c "'Правильный, тот что справа. Одна книга, которая закрыта. Видишь, это легко запомнить, ведь так?'"
 
                     hide screen5
                     show screen2
 
 
-                    c "'Hope you won't disappoint me next time.'"
+                    c "'Надеюсь, ты не разочаруешь меня в следующий раз.'"
 
                     jump secondq
-            "The one in the middle":
+            "Та, что посередине":
 
 
-                b "'The middle one?..'"
+                b "'Та, что посередине?..'"
 
                 jump wrong1
-            "The one on the right":
+            "Та, что справа":
 
 
                 $ quiz_score += 1
-                b "'The right one?..'"
+                b "'Та, что справа?..'"
 
                 hide screen2
                 show screen4
@@ -2877,36 +2874,36 @@ label secret:
 
                 play sound accent281
 
-                c "'See! You're doing it! The card with one book, which is closed.'"
+                c "'Видишь, ты сделал это! Карта с одной книгой, которая закрыта.'"
 
-                c "'Good job.'"
+                c "'Хорошая работа.'"
 
-                b "'I-I guess... It wasn't that hard.'"
+                b "'Я-я думаю... Это не было так сложно.'"
 
-                c "'This knowledge might come in handy one day! We might go to a party some time, and this game is best played with lots of people.'"
+                c "'Эти знания однажды могут пригодиться в один прекрасный день! Мы можем когда-нибудь пойти на вечеринку, и в эту игру лучше всего играть с большим количеством людей.'"
 
                 hide screen4
                 show screen2
 
-                pov "You are not sure if you ever get to go party, but you still nod with an unsure smile."
+                pov "Ты не уверен, сможешь ли когда-нибудь пойти на вечеринку, но ты всё равно киваешь с неуверенной улыбкой."
 
                 jump secondq
 
     label secondq:
 
-        c "'Hm, what should I ask you next...'"
+        c "'Хм..Что бы мне спросить у тебя следующим...'"
 
         hide card1 with dissolve
 
-        c "'Oh, do you remember which card is the most importand card in the game?'"
+        c "'Ох, ты помнишь, какая карта является более значимой в игре?'"
 
         show card2 zorder 1 with dissolve
         pause(2.0)
 
         menu:
-            "The one on the left":
+            "Та, что слева":
 
-                b "'Um... Left one?'"
+                b "'Эм..Слева?'"
 
                 hide screen2
                 show screen4
@@ -2914,32 +2911,32 @@ label secret:
 
                 play sound buzzer1
 
-                c "'Hm... sadly, no. That's a wrong answer.'"
+                c "'Хм... жалко, но нет. Это неправильный ответ.'"
 
-                c "'The card with a key is the strongest and most important card.'"
+                c "'Та, карта с ключом - самая сильная и значимая карта в игре.'"
 
-                c "'You should always keep this card in mind, Shin. Think of it as if it's a key to your victory, haha!'"
+                c "'Ты должен всегда помнить об этой карте, Шин. Думай об этом так, словно это ваш ключ к победе, хаха!'"
 
-                c "'This is the only card that should be disclosed. Because if you have it, the other players cannot drop you out, otherwise it's an instant loss for everyone.'"
+                c "'Это единственная карта, которая может быть раскрыта. Ведь, если она есть у тебя, то остальные игроки не смогут выкинуть тебя, ведь, это значит проигрыш для всех остальных.'"
 
                 hide screen4
                 show screen5
 
-                c "'The thing is... Will they trust your word? Haha.'"
+                c "'Дело лишь в том... Поверять ли они тебе на слово? Хаха.'"
 
-                b "(Damn... It was wrong.)"
+                b "(Чёрт... Это было неверно.)"
 
                 hide screen5
                 show screen2
 
-                c "'That's a pity. I hope you'll memorize it now.'"
+                c "'Какая жалость. Я надеялся, что ты всё это помните.'"
 
                 jump thirdq
-            "The one on the right":
+            "Тот, что справа":
 
 
                 $ quiz_score += 1
-                b "'Right one?..'"
+                b "'Справа?..'"
 
                 hide screen2
                 show screen4
@@ -2947,15 +2944,15 @@ label secret:
 
                 play sound accent281
 
-                c "'That's right! Oh, you're making me feel so proud!'"
+                c "'Правильно! Ох, ты заставляешь меня чувствовать таким гордым!'"
 
-                b "'Uh... If I remember correctly, this card guarantees that no one will touch you. Because if they choose you as a culprit, it's an instant loss for everyone.'"
+                b "'Ух... Если я правильно помню, эта карта гарантирует, что тебя никто не тронет. Потому что, если они выберут тебя в качестве виновника, то это мгновенный проигрыш для всех.'"
 
-                b "'You should always let people know that you have this card, right?'"
+                b "'Ты всегда должен сообщать людям, что у тебя есть эта карта, верно?'"
 
-                c "'Nicely done! You are correct. You did listen to my explanations after all!'"
+                c "'Отличная работа! Ты прав. Ты слушал мои объяснения, в конце концов!'"
 
-                b "'I always listen to you, Hiyori-kun...'"
+                b "'Я всегда слушаю тебя, Хиёри...'"
 
                 hide screen4
                 show screen2
@@ -2967,7 +2964,7 @@ label secret:
 
         hide card2 with dissolve
 
-        c "'Let's see what's next.'"
+        c "'Итак, что будет следующее.'"
 
         show eye zorder 1
         pause(0.1)
@@ -2989,106 +2986,106 @@ label secret:
         hide screen2
         show screen5
 
-        c "'Mm? Something's the matter?'"
+        c "'Мм? Что-то не так?'"
 
         b "'. . .'"
 
-        b "'N-no, it's... nothing.'"
+        b "'Н-нет, просто... ничего.'"
 
         play music nounai fadein 2
 
-        c "'Oh, good.'"
+        c "'Ох, хорошо.'"
 
         hide screen5
         show screen2
 
-        c "'Do you remember which card is used in the game?'"
+        c "'Ты помнишь, какая карта используется в игре?'"
 
         menu:
-            "The one on the left":
+            "Та, что слева":
 
                 $ quiz_score += 1
-                b "'The one on the left... The right one does not exist, right?'"
+                b "'Та, что слева... Правой не существует, так?'"
 
                 hide screen2
                 show screen4
 
                 play sound accent281
 
-                c "'That's correct! Haha, nice work not falling for my trap.'"
+                c "'И это правильно! Хаха, хорошая работа, ты не попал в мою ловушку.'"
 
-                c "'Some game masters could try to deceive you and give you the fake card. That's why you should always remember how real cards look.'"
+                c "'Некоторые игровые мастера, могут попытаться обмануть вас и дать вам фальшивую карту. Поэтому ты должен помнить, как выглядят настоящие карты.'"
 
-                c "'If you keep the rules in mind, you will win.'"
+                c "'Если ты будешь держать эти правила в своей голове, то выйграешь.'"
 
-                c "'But you are a cutie, so you don't have to worry. Nobody would want to get rid of you when you look at them with your big sad eyes.'"
+                c "'Но ты милашка, поэтому можешь не беспокоиться об этом. Никто не захочет избавиться от тебя, если ты посмотришь на них своими большими грустными глазами.'"
 
                 hide screen4
                 show screen5
 
-                c "'People tend to trust those who are friendly and weak. But how long will it last? Haha.'"
+                c "'Люди склонны доверять тем, кто дружелюбен и слаб. Но как долго это продлится? Хаха.'"
 
-                b "'H-hiyori-kun!.. Stop messing with me...'"
+                b "'Х-Хиёри!.. Перестань издеваться надо мной...'"
 
-                c "'Oh, I'm barely joking!'"
+                c "'Ох, я едва шучу!'"
 
                 hide screen5
 
                 jump fourthq
-            "The one on the right":
+            "Та, что справа":
 
 
-                b "'Um... Right one?'"
+                b "'Эм... Справа?'"
 
                 hide screen2
                 show screen5
 
                 play sound buzzer1
 
-                c "'Hm... No, you are wrong. Did you even listen to my explanation?'"
+                c "'Хм... Нет, ты ошибься. Ты хотя бы немного слушал мои объяснения?'"
 
-                c "'This card does not exist.'"
+                c "'Эта карта не существует.'"
 
-                c "'Some game masters could try to deceive you and give you the fake card. That's why you should always remember how real cards look.'"
+                c "'Некоторые игровые мастера, могут попытаться обмануть вас и дать вам фальшивую карту. Поэтому ты должен помнить, как выглядят настоящие карты.'"
 
                 hide screen5
                 show screen2
 
-                c "'I hope you'll remember this.'"
+                c "'Я надеюсь, ты запомнишь это.'"
 
-                b "(Damn... I was wrong.)"
+                b "(Чёрт... Я ошибся.)"
 
                 hide screen2
 
                 jump fourthq
-            "...What were those pictures?":
+            "...Что это за картинки были?":
 
 
-                b "'H-hiyori-kun... What was that..?'"
+                b "'Х-хиёри...Что это было..?'"
 
-                c "'What do you mean?'"
+                c "'Что ты имеешь в виду?'"
 
-                b "'There were pictures for a split second... Photos of some sort..?'"
+                b "'Здесь были картинки, которые промелькнули на секунду... Картинки чего..?'"
 
                 hide screen2
                 show screen5
 
                 play sound extend1
 
-                c "'Are you trying to avoid my question? Haha, that's so like you.'"
+                c "'Ты пытаешься избежать моего вопроса? Хаха, это так похоже на тебя.'"
 
                 b "'. . .'"
 
-                pov "You cannot shake off the anxiety."
+                pov "Ты не можешь избавиться от тревоги."
 
-                pov "But... Maybe, it's just your imagination."
+                pov "Но... Может быть, это просто твоё воображение."
 
                 hide screen5
                 show screen2
 
-                c "'The correct card was on the left. Take a close look at it.'"
+                c "'Правильная карта, та, что слева. Присмотрись внимательнее.'"
 
-                c "'Some game masters could try to deceive you and give you the fake card. That's why you should always remember how real cards look.'"
+                c "'Некоторые игровые мастера, могут попытаться обмануть вас и дать вам фальшивую карту. Поэтому ты должен помнить, как выглядят настоящие карты.'"
 
                 hide screen2
 
@@ -3099,59 +3096,59 @@ label secret:
         show screen2
         hide card3 with dissolve
 
-        c "'Alright, the last question.'"
+        c "'Итак, последний вопрос.'"
 
         show card4 zorder 1 with dissolve
         pause(1.0)
 
-        c "'Now that we know that this card is real... do you remember what it's called?'"
+        c "'Теперь, когда мы знаем, какие карты настоящие... Ты помнишь, как называется эта?'"
 
         python:
-            cardname = renpy.input("What is this card called?", length=32)
+            cardname = renpy.input("Как называется эта карта?", length=32)
             cardname = cardname.strip()
 
-        if cardname in ["SACRIFICE", "sacrifice", "Sacrifice"]:
+        if cardname in ["ЖЕРТВА", "жертва", "Жертва"]:
 
             $ quiz_score += 1
-            b "It's [cardname], right?"
+            b "Это [cardname], так?"
 
             hide screen2
             show screen4
 
             play sound accent281
 
-            c "'Bingo!'"
+            c "'Бинго!'"
 
-            c "'See? Wasn't so hard, wasn't it? Do you remember what this card does?'"
+            c "'Видишь? Это было не так сложно, не так ли? Ты помнишь, что она делает?'"
 
-            b "'From what you explained, it's... almost as important as the key one? It's one of the strongest cards, but... You need everyone to trust you. If they don't, it's a loss for you...'"
+            b "'Из того, что ты объяснил, это... она почти так же важна, как и ключник? Это одна из самых сильных карт, но... Тебе нужно, чтобы все доверяли тебе. Если они не могут, то это потеря для тебя...'"
 
             hide screen4
             show screen5
 
-            c "'Oh, you're killing it today, Shin!'"
+            c "'Ох, ты сегодня просто убиваешь, Шин!'"
 
-            c "'Just don't forget that no one should know you have this card. If it's called ''Sacrifice'' you really gotta make everyone believe you should be sacrificed.'"
+            c "'Просто не забывай, что никто не должен знать, что у тебя эта карта. Если она называется ''Жертва'', то ты действительно должен заставить всех поверить, что они должны пожертвовать тобой.'"
 
-            c "'Otherwise, consider it's a loss the very moment you pick this card, haha.'"
+            c "'В другом случае, считай, что это проигрыш в тот момент, когда возьмёшь эту карту, хаха.'"
 
-            b "'Have you ever won with this card?'"
+            b "'Ты когда-нибудь выйгрывал с этой картой?'"
 
             hide screen5
             show screen4
 
-            c "'Hm? Why do you ask?'"
+            c "'Хм? Почему ты спрашиваешь?'"
 
-            b "'Well... you've played this game before, and you know the rules so well... Have you won with it before?'"
+            b "'Ну... Ты играл в эту игру ранее, и ты знаешь правила очень хорошо... Тебе удавалось выйгрывать с этим раньше?'"
 
-            c "'Maybe I have. I'll leave it to your imagination.'"
+            c "'Может быть. Оставлю это твоему воображению.'"
 
-            b "'Hiyori-kun!.. I did my best to answer your questions, why can't you answer mine?..'"
+            b "'Хиёри!.. Я сделал всё возможное, чтобы ответить на твой вопрос, так почему, ты не можешь ответить на мой?..'"
 
             hide screen4
             show screen5
 
-            c "'Haha... Because it's more fun that way.'"
+            c "'Хаха... Потому так гораздо веселее.'"
 
             hide screen5
 
@@ -3159,36 +3156,36 @@ label secret:
         else:
 
 
-            b "It's [cardname], right?"
+            b "Это [cardname], да?"
 
             hide screen2
             show screen5
 
             play sound buzzer1
 
-            c "'Hmm... No, no. That's incorrect.'"
+            c "'Хмм... Нет и нет. Это неправильно.'"
 
-            c "'It's such a simple question, Shin.'"
+            c "'Это такой простой вопрос, Шин.'"
 
-            c "'Maybe you should print the cards out and stick them next to your notes on your monitor?'"
+            c "'Может быть мне стоит распечатать эти карты и налепить их рядом с записями на твоём мониторе?'"
 
-            b "'...Sorry.'"
+            b "'...Извини.'"
 
             hide screen5
             show screen4
 
-            c "'The card is called ''Sacrifice''. It's one of the most important cards in the game.'"
+            c "'Эта карта называется ''Жертва''. Одна из самых важных карт в игре.'"
 
-            c "'Don't forget that no one should know you have this card. If it's called ''Sacrifice'' you really gotta make everyone believe you should be sacrificed.'"
+            c "'Просто не забывай, что никто не должен знать, что у тебя эта карта. Если она называется ''Жертва'', то ты действительно должен заставить всех поверить, что они должны пожертвовать тобой.'"
 
-            c "'Otherwise, consider it a loss the very moment you pick this card, haha.'"
+            c "'В другом случае, считай, что это проигрыш в тот момент, когда возьмёшь эту карту, хаха.'"
 
-            b "'Yes, I'll... I'll try to memorize it.'"
+            b "'Да, я... я постараюсь запомнить это.'"
 
             hide screen4
             show screen5
 
-            c "'I hope so. It'll be imposible to play with you if you won't, haha.'"
+            c "'Я надеюсь. Это будет невозможно играть с тобой, если ты никогда не сможешь выйграть, хаха.'"
 
             hide screen5
 
@@ -3210,73 +3207,75 @@ label secret:
 
             show sou12 at right with dissolve
 
-            c "'Such a nice surprise, Shin! Even if you're still sleepy, you answered correctly.'"
+            c "'Такой приятный сюрприз, Шин! Несмотря на то, что ты всё ещё сонный, ты ответил на всё правильно.'"
 
-            c "'Especially considering that we haven't talked about this game for a week. I'm glad you were able to remember everything.'"
+            c "'Учитывая то, что мы не разговаривали об это игре уже неделю. Я рад, что ты всё помнишь.'"
 
             show shin7 at left with dissolve
 
 
-            b "'Aha... It wasn't that hard...'"
+            b "'Аха... Это не было так трудно...'"
 
             hide sou12
             show sou11 at right
 
-            c "'No need to belittle yourself. You did great!'"
+            c "'Не нужно принижать себя. Ты отлично справился!'"
 
             hide shin7
             show shin6 at left
 
-            b "'Hiyori-kun... Why are you obsessed with those games? We barely even get to play them...'"
+            b "'Хиёри... Почему ты одержим этими играми? Мы едва ли можем поиграть в них...'"
 
             hide sou11
             show sou4 at right
 
-            c "'I'm not complaining when you're asking me to play your favorite farming games with you, am I? Haha... Everyone has their own hobbies.'"
+            c "'Я не жалуюсь, когда вы просите меня поиграть в твои любимые фермерские игры, не так ли? Хаха... У всех есть свои хобби.'"
 
-            c "'I support your hobbies, and you should do the same with mine. That's how friendship works!'"
+            c "'Я поддерживаю твоё хобби, и ты должен сделать то же самое с моим. Так работает дружба!'"
 
             hide shin6
             show shin3 at left
 
             play sound powerdown07
 
-            b "'Uuu.. Y-yes, you're right... Sorry, I didn't mean to sound rude.'"
+            b "'Ууу.. Д-да, ты прав... Извини, я не хотел звучать грубо.'"
 
             hide sou4
             show sou1 at right
 
-            c "'That aside, you've really brighten my mood up today. Maybe you should have a little reward for your hard work, don't you think?'"
+            c "'Просто не забывай, что никто не должен знать, что у тебя эта карта. Если она называется ''Жертва'', то ты действительно должен заставить всех поверить, что они должны пожертвовать тобой.'"
+
+            c "В любом случае, ты поднял моё настроение на сегодня. Может быть, тебе нужна небольшая награда за такую трудную работу, что думаешь?'"
 
             hide shin3
             show shin6 at left
 
-            b "'R-reward? That's not necessary, Hiyori-kun...'"
+            b "'Н-награда? Не нужно, Хиёри...'"
 
             hide sou1
             show sou2 at right
 
-            c "'Aw, c'mon, don't be so modest. Can you wait for me here for a little bit? I have to grab something.'"
+            c "'Ах, давай, не будь таким скромным. Можешь подождать меня немного? Я должен взять кое-что.'"
 
-            b "'S-sure... Do you need my help?'"
+            b "'К-конечно... Тебе нужна моя помощь?'"
 
             hide sou2
             show sou3 at right
 
-            c "'Not really. Just stay here and wait for me. And don't you go looking through my stuff again like the last time!'"
+            c "'Не совсем. Просто останься здесь и подожди меня. И не заглядывай в мои вещи снова, как в прошлый раз!'"
 
             hide shin6
             show shin3 at left
 
-            b "'...I said I'm sorry... There was a fly on your monitor, I tried to swat it...'"
+            b "'...Я уже извинился... На твоём мониторе была муха, и я пытался её убрать...'"
 
             hide sou3 with dissolve
 
-            pov "He knows you're lying, but you try to do it anyway."
+            pov "Он знает, что ты лжёшь, но ты всё равно пытаешься сделать это."
 
             play sound asioto2
 
-            pov "Thankfully, he doesn't respond and simply walks out of the room."
+            pov "К счастью, он не ответил и просто вышел из комнаты."
 
             jump explore
         else:
@@ -3285,39 +3284,39 @@ label secret:
 
             show sou11 at right with dissolve
 
-            c "'Hm... To be honest, I am disappointed, Shin. I thought you were able to do better than that.'"
+            c "'Хм... Если честно, я разочарован, Шин. Я думал, ты сможешь сделать лучше, чем это.'"
 
-            c "'Maybe you really should print the cards out and stick them on your monitor to memorize them? Hm...'"
+            c "'Может быть, ты и правду должен распечатать эти карты и наклеить на свой монитор, чтобы запомнить? Хм...'"
 
             show shin5 at left with dissolve
 
             play sound powerdown07
 
-            b "'I'm sorry... I'll try to do better next time.'"
+            b "'Извини... В следующий раз, я постараюсь лучше.'"
 
             hide sou11
             show sou3 at right
 
-            c "'I hope you will.'"
+            c "'Я надеюсь на это.'"
 
-            c "'Maybe we should play another game... Let me see...'"
+            c "'Может быть нам стоит сыграть в другую игру... Давайка посмотрим...'"
 
             hide shin5
             show shin6 at left
 
-            b "'Hiyori-kun... Why are you obsessed with those games? We barely even get to play them...'"
+            b "'Хиёри... Почему ты одержим этими играми? Мы едва ли можем поиграть в них...'"
 
             hide sou3
             show sou4 at right
 
-            c "'I'm not complaining when you're asking me to play your favorite farming games with you, am I? Haha... Everyone has their own hobbies.'"
+            c "'Я не жалуюсь, когда вы просите меня поиграть в твои любимые фермерские игры, не так ли? Хаха... У всех есть свои хобби.'"
 
-            c "'I support your hobbies, and you should do the same with mine. That's how friendship works!'"
+            c "'Я поддерживаю твоё хобби, и ты должен сделать то же самое с моим. Так работает дружба!'"
 
             hide shin6
             show shin3 at left
 
-            b "'Uuu.. Y-yes, you're right... Sorry, I didn't mean to sound rude.'"
+            b "'Ууу.. Д-да, ты прав... Извини, я не хотел звучать грубо.'"
 
             hide sou4
             show sou3 at right
@@ -3331,25 +3330,24 @@ label secret:
             hide shin3
             show shin6 at left
 
-            b "'Is everything alright?'"
+            b "'Всё хорошо?'"
 
             hide sou3
             show sou11 at right
 
-            c "'Mm, yes. It's from my job. Wait for me here, okay?'"
+            c "'Мм, да. Это с моей работы. Подожди меня здесь, хорошо?'"
 
-            c "'And don't you go looking through my stuff again like the last time!'"
+            c "'И не заглядывай в мои вещи снова, как в прошлый раз!'"
 
             hide shin6
             show shin3 at left
 
-            b "'...I said I'm sorry... There was a fly on your monitor, I tried to swat it...'"
+            b "'...Я уже извинился... На твоём мониторе была муха, и я пытался её убрать...'"
+            hide sou3 with dissolve
 
-            hide sou11 with dissolve
+            pov "Он знает, что ты лжёшь, но ты всё равно пытаешься сделать это."
 
-            pov "He knows you're lying, but you try to do it anyway."
-
-            pov "Thankfully, he doesn't respond and simply walks out of the room."
+            pov "К счастью, он не ответил и просто вышел из комнаты."
 
             jump explore
 
@@ -3366,15 +3364,15 @@ label secret:
         b "'. . .'"
 
         menu:
-            "Take a peek at his monitor anyway":
+            "Посмотреть в его монитор, в любом случае":
 
                 hide shin4 with dissolve
 
-                pov "You cannot resist your curiousity."
+                pov "Ты не можешь унять своё любопытство."
 
-                pov "Where does he even find these games?"
+                pov "Где он вообще находит эти игры?"
 
-                pov "The last time you barely had the time to look through his files."
+                pov "В последний раз, у тебя было едва времени, чтобы заглянуть в его файлы."
 
                 pov ". . ."
 
@@ -3382,89 +3380,89 @@ label secret:
 
                 pov ". . ."
 
-                pov "His computer is off, of course."
+                pov "Его компьютер выключен, конечно."
 
-                pov "From the corner of your eye you notice a flash drive."
+                pov "В углу ты замечаешь USB-флеш-накопитель."
 
                 scene tense4blur with dissolve
 
                 show flash with dissolve
 
-                pov "...Maybe, there's something valuable on it?"
+                pov "...Может быть, на ней есть что-то ценное?"
 
                 pov ". . ."
 
-                pov "You have a bad feeling."
+                pov "У тебя плохое предчувствие."
 
                 stop music fadeout 2
 
                 menu:
-                    "Inspect the flash drive":
+                    "Проверить USB-флеш-накопитель":
 
-                        pov "You grab the flash drive and squeeze it in your hand."
+                        pov "Ты берёшь USB-флеш-накопитель, сжимая его в руках."
 
-                        pov "The material it's made from feels much tougher and heavier than it seems."
+                        pov "Материал из которого он сделан, кажется намного жестче и тяжелее, чем есть на вид."
 
-                        pov "Your hand starts shaking."
+                        pov "Твоя рука начинает трястись."
 
-                        pov "This is wrong. Can you even call yourself his friend if you behave like this?"
+                        pov "Это неправильно. Как ты можешь называть себя его другом после этого?"
 
                         pov "..."
 
                         play sound asioto2
 
-                        pov "Luckily before you could think about doing anything with it, you heard distant steps coming from the corridor."
+                        pov "К счастью, прежде чем ты успел подумать о том, чтобы что-то с этим сделать, ты услышал отдаленные шаги, доносящиеся из коридора."
 
                         hide flash with dissolve
 
-                        pov "You quickly place it back on the table and go back to your chair."
+                        pov "Ты быстро кладёшь это на стол и садишься на кресло."
 
-                        pov "You're still curious, but at least... you almost don't feel guilty."
+                        pov "Тебе до сих пор любопытно, но, по крайне мере... ты почти не ощущаешь себя виноватым."
 
                         scene souroom with dissolve
 
                         play music hazama2 fadein 2
 
                         jump comeback
-                    "God, just don't touch anything and go back to your seat":
+                    "Боже, просто ничего не трогай и вернись на место":
 
 
                         hide flash with dissolve
 
-                        pov "This is wrong. Can you even call yourself his friend if you behave like this?"
+                        pov "Это неправильно. Как ты можешь называть себя его другом после этого?"
 
-                        pov "You look at the keyboard with a heavy sigh, go back to your chair and kick your legs anxiously."
+                        pov "Ты тяжело вздыхаешь смотря на клавиатуру и возращаешься к своему креслу. Твои ноги начинают беспокойно трястись."
 
                         play music hazama2 fadein 2
 
                         scene souroom with dissolve
 
-                        pov "What's it all about? Memory tests?"
+                        pov "Что это? Тестирование памяти?"
 
-                        pov "You stopped asking questions a long time ago, but..."
+                        pov "Ты давно перестал задавать вопросы, но..."
 
-                        pov "It doesn't mean you don't think about it."
+                        pov "Это не значит, что они не беспокоили тебя."
 
                         pov ". . ."
 
                         play sound asioto2
 
-                        pov "Luckily before heavy thoughts filled your head completely, you heard distant steps coming from the corridor."
+                        pov "К счастью, до того как твою голову начал заполнять всякий бардак, ты услышал отдалённые шаги, доносящиеся с коридора."
 
                         jump comeback
-            "Do nothing":
+            "Ничего не делать":
 
 
                 hide shin4
                 show shin1
 
-                pov "You sit on your chair, akwardly kicking your legs."
+                pov "Ты сидишь на своем стуле, неловко болтая ногами."
 
-                pov "You always feel a little uneasy when you're alone in the room. But it's a whole different kind of uneasy compared to your friend being with you."
+                pov "Ты всегда чувствуешь себя немного неудобно, когда начинаешь оставаться один в комнате. Но это совершенно другой вид беспокойства, по сравнению с тем, когда твой друг остаётся рядом с тобой."
 
                 play sound asioto2
 
-                pov "Luckily before you could think too hard about it, you heard distant steps coming from the corridor."
+                pov "К счастью, до того как ты начал думать об этом слишком много, ты услышал отдалённые шаги, доносящиеся с коридора."
 
                 jump comeback
     label comeback:
@@ -3475,36 +3473,36 @@ label secret:
             show shin1 at left with move
             show sou12 at right with dissolve
 
-            c "'Oh, I almost spilled it... Did you leave your stuff on the floor again? That's not very nice, Shin.'"
+            c "'Ох, я чуть ли не пролил его... Ты снова оставил свои вещи на полу? Это не очень хорошо, Шин.'"
 
             hide shin1
             show shin4 at left
 
             play sound powerdown07
 
-            b "'A-ah... I'm sorry, I'll pick everything up later.'"
+            b "'А-ах... Извини, я уберу это позже.'"
 
-            c "'I hope you won't forget to do that! But I'm not mad at you. After all, you did so well today!'"
+            c "'Я надеюсь, ты не забудешь это сделать! Но я не злюсь на тебя. В конце концов, ты хорошо потрудился сегодня!'"
 
             scene souptime with dissolve
 
             play sound accent281
 
-            b "'Ah! You... cooked it for me?'"
+            b "'Ах! Ты... приготовил для меня?'"
 
-            c "'Who else could I do this for? You know I don't really like soups. I bought you your favorite flavor, too.'"
+            c "'Для кого ещё я мог это сделать? Ты же знаешь, что мне не очень нравятся супы. Я купил тебе твой любимый вкус тоже.'"
 
-            b "'I c-could tell from the smell, aha... Th-thank you!'"
+            b "'Я м-могу сказать это по запаху, аха... Сп-спасибо тебе!'"
 
-            c "'You're welcome. Just don't get it all over the table and the keyboard, okay?'"
+            c "'Всегда пожалуйста. Просто не пролей его на стол и клавиатуру, хорошо?'"
 
-            pov "You're not sure if the soup is edible because your friend's cooking skills always were kind of... questionable."
+            pov "Ты не уверен, съедобен ли этот суп, ведь навыки готовки твоего друга были довольно... сомнительны."
 
-            pov "But still, knowing that someone is caring for you... felt nice."
+            pov "Но тебе было достаточно того, что кто-то заботиться о тебе... это приятно."
 
-            pov "And it really is your favorite flavor."
+            pov "И это действительно твой любимый вкус."
 
-            b "'D-don't worry about that, aha... Thank you again.'"
+            b "'Н-не волнуйся об этом, аха... Спасибо тебе снова.'"
 
             scene souroom with dissolve
 
@@ -3518,27 +3516,27 @@ label secret:
             show shin1 at left with move
             show sou13 at right with dissolve
 
-            c "'Did you leave your stuff on the floor again? That's not very nice, Shin.'"
+            c "'Ты снова оставил свои вещи на полу? Это не очень хорошо, Шин.'"
 
             hide shin1
             show shin3 at left
 
             play sound powerdown07
 
-            b "'A-ah... I'm sorry, I'll pick everything up later.'"
+            b "'А-ах... Извини, I'll pick everything up later.'"
 
             hide sou13
             show sou11 at right
 
-            c "'Please don't forget to do that. You know how much time I spend on cleaning.'"
+            c "'Пожалуйста, не забудь это сделать. Ты знаешь, как много времени я трачу на уборку.'"
 
-            pov "You don't."
+            pov "Ты не знаешь."
 
-            pov "More exactly, you've never seen him clean. But for some reason, his flat is always almost sterile."
+            pov "Точнее, ты никогда не видел его убирающимся. По некоторым причинам, его квартира почти всегда выглядела чистой."
 
-            pov "Sometimes it's hard to beleive that a human being lives here."
+            pov "Иногда сложно поверить, что здесь живёт человек."
 
-            pov "But maybe you're just a different kind of person."
+            pov "Но, может быть, ты просто другой тип человека."
 
             hide sou11
             show sou3 at right
@@ -3550,17 +3548,17 @@ label secret:
 
     label worktalk:
 
-        c "'Oh, also, Shin! How's your work?'"
+        c "'Ох, так же, Шин! Как твоя работа?'"
 
         hide shin1
         show shin6 at left
 
-        b "'W-work?.. I've been taking several jobs now, which one do you mean?'"
+        b "'Р-работа?.. Я работаю в нескольих местах , какую из ты имеешь в виду?'"
 
         hide sou3
         show sou5 at right
 
-        c "'Don't be silly, Shin. I know you got fired form that convenience shop.'"
+        c "'Не будь глупым, Шин. Я знаю, что тебя уволили из того магазина.'"
 
         b "'. . .'"
 
@@ -3569,77 +3567,77 @@ label secret:
 
         b "'. . .'"
 
-        b "'Who told you?..'"
+        b "'Кто сказал тебе это?..'"
 
         hide sou5
         show sou12 at right
 
         play sound extend1
 
-        c "'You did. Just now.'"
+        c "'Ты. Только что.'"
 
         b "'. . !'"
 
         hide sou12
         show sou15 at right
 
-        c "'It's written all over your face. Anyway, I'm just... worried about you.'"
+        c "'Всё написано на твоём лице. В любом случае, я просто... волнуюсь о тебе.'"
 
-        c "'Would you like to tell me what happened?'"
+        c "'Можешь ли ты мне рассказать, что случилось?'"
 
         hide shin5
         show shin3 at left
 
-        b "'I-it's not important, it's just...'"
+        b "'Э-это не так важно, просто...'"
 
-        pov "The way he's looking at you makes you shiver for a second."
+        pov "То, как он смотрит на тебя, заставляет тебя на секунду вздрогнуть."
 
         menu:
-            "Tell him the truth":
+            "Рассказать ему правду":
 
                 hide shin3
                 show shin4 at left
 
                 b "'. . .'"
 
-                b "'It's just... I didn't get along with another employee...'"
+                b "'Это просто... Я не схожусь в одним сотрудником...'"
 
                 hide sou15
                 show sou13 at right
 
-                c "'Oh, is that right? You never even talk to anyone.'"
+                c "'О, это так? Ты ни с кем не разговариаешь.'"
 
-                b "'T-that's why he didn't like me... He started calling me... ''weird''.'"
+                b "'П-поэтому, я ему и не нравлюсь... Он начал звать меня... ''странным''.'"
 
-                c "'Oh?'"
+                c "'Ох?'"
 
                 hide shin4
                 show shin6 at left
 
-                b "'It's not that important, really. It's not the first time.'"
+                b "'Это не так важно, правда. Это не в первый раз.'"
 
-                b "'Anyway, the other workers liked him more than me, so...'"
+                b "'В любом случае, другие сотрудники любят его больше, чем меня, ну...'"
 
-                b "'That's why I left... I couldn't defend myself, once again...'"
+                b "'Вот почему я ушёл... Я не смог защитить себя, снова...'"
 
                 hide sou13
                 show sou3 at right
 
-                c "'Hm.'"
+                c "'Хм.'"
 
-                pov "His short answer almost makes you jump. You really want to stop talking about this."
+                pov "Его короткий ответ, чуть ли не заставил тебя подпрыгнуть. Ты правда хочешь прекратить говорить об этом."
 
                 hide shin6
                 show shin3 at left
 
-                b "'I-it's not like I can't handle myself!.. Don't worry.'"
+                b "'Э-это не значит, что я не могу справиться с собой!.. Не волнуйся.'"
 
                 hide sou3
                 show sou6 at right
 
-                c "'I thought we were best friends... And you still keep secrets from me.'"
+                c "'Я думал, что мы лучшие друзья... Но ты всё ещё хранишь секреты от меня.'"
 
-                c "'I'll see what I can do.'"
+                c "'Посмотрим, что я могу сделать.'"
 
                 hide shin3
                 show shin5 at left
@@ -3651,20 +3649,20 @@ label secret:
 
                 play sound accent281
 
-                c "'I'll help you find a new place to work! Did you know that I was the one who handled the software of their cash registers? What a coincidence!'"
+                c "'Я могу помочь тебе найти новое место работы! Ты знал, что я был тем, кто занимался програмнным обеспечением их кассовых аппаратов? Какое совпадение!'"
 
-                pov "You don't believe in such coincidences."
+                pov "Ты не веришь, что это просто совпадение."
 
                 hide sou2
                 show sou5 at right
 
-                c "'Maybe they could recommend me a different place for you within the store's chain. A place, where you wouldn't get bullied."
+                c "'Может быть, они могли бы порекомендовать мне другое место для тебя в сети магазинов. Место, где над тобой не будут издеваться."
 
-                c "'I'll call them today. Don't thank me!'"
+                c "'Я позвоню им сегодня. Не благодари!'"
 
-                pov "You don't want to thank him."
+                pov "Ты не хочешь его благодарить."
 
-                c "'I would love to meet your ex-collegues though... Maybe I'll learn something new from them.'"
+                c "'Я бы с радостью встретился с твоими бывшими коллегами... Может быть, я научусь чему нибудь новому от них.'"
 
                 hide shin5
                 show shin4 at left
@@ -3674,68 +3672,67 @@ label secret:
                 hide shin4
                 show shin3 at left
 
-                b "'No need... The past is in the past.'"
+                b "'Не нужно... Прошлое остаётся в прошлом.'"
 
-                pov "He simply smiles at you without giving any promises."
+                pov "Он просто улыбается, не давая никаких обещаний."
 
-                pov "You regret your life choises."
+                pov "Ты сожелеешь о своём жизненном выборе."
 
                 jump leave
-            "Try to change the subject":
+            "Попробую сменить тему разговора":
 
 
                 hide shin3
                 show shin6 at left
 
-                b "'What about your job though?'"
+                b "'Кстати, что насчёт твоей работы?'"
 
-                b "'You never told me where you work now.'"
+                b "'Ты никогда не рассказывал, где работаешь сейчас.'"
 
                 hide sou15
                 show sou4 at right
 
-                c "'Avoiding the subject? I thought we were best friends, but you don't want to share even something trivial like this.'"
+                c "'Уходишь от темы? Я думал, мы лучшие друзья, но ты не хочешь делиться со мной чем-то пустяковым.'"
 
                 hide shin6
                 show shin5 at left
 
                 b "'. . .'"
 
-                b "'I-it's not important, that's all... I barely even remember what happened. They just probably didn't like me.'"
+                b "'Э-это не так важно, в конце концов... Я едва помню, что произошло. Наверное, я им просто не понравился.'"
 
                 hide sou4
                 show sou3 at right
 
-                c "'Hm.'"
+                c "'Хм.'"
 
-                c "'You expect me to answer your questions when you don't want to answer mine.'"
+                c "'Ты ожидаешь, что я отвечу на твой вопрос, хотя ты сам не отвечаешь на мои.'"
 
-                c "'That's not very nice, Shin...'"
+                c "'Это не очень хорошо, Шин...'"
 
-                pov "For some reason, it feels like he's the one who's avoiding the subject."
+                pov "По какой-то причине, кажется, что это он, кто избегает темы."
 
                 hide sou3
                 show sou2 at right
 
                 play sound accent281
 
-                c "'But that's okay! Even if you don't treat our friendship right, I am ready to do everything for you.'"
+                c "'Но всё в порядке! Даже если ты не относишься к нашей дружбе должным образом, я готов сделать всё, что угодно для тебя.'"
 
-                c "'I'll help you find a new place to work! Did you know that I was the one who handled the software of their cash registers? What a coincidence!'"
+                c "'Я могу помочь тебе найти новое место работы! Ты знал, что я был тем, кто занимался програмнным обеспечением их кассовых аппаратов? Какое совпадение!'"
 
-                pov "You don't believe in such coincidences."
+                pov "Ты не веришь, что это просто совпадение."
 
                 hide sou2
                 show sou5 at right
 
-                c "'Maybe they could recommend me a different place for you within the store's chain. A place, where you wouldn't get bullied."
+                c "'Может быть, они могли бы порекомендовать мне другое место для тебя в сети магазинов. Место, где над тобой не будут издеваться."
 
-                c "'I'll call them today. Don't thank me!'"
+                c "'Я позвоню им сегодня. Не благодари!'"
 
-                pov "You don't want to thank him."
+                pov "Ты не хочешь его благодарить."
 
-                c "'I would love to meet your ex-collegues though... Maybe I'll learn something new from them.'"
-
+                c "'Я бы с радостью встретился с твоими бывшими коллегами... Может быть, я научусь чему нибудь новому от них.'"
                 hide shin5
                 show shin4 at left
 
@@ -3744,11 +3741,11 @@ label secret:
                 hide shin4
                 show shin3 at left
 
-                b "'No need... The past is in the past.'"
+                b "'Не нужно... Прошлое остаётся в прошлом.'"
 
-                pov "He simply smiles at you without giving any promises."
+                pov "Он просто улыбается, не давая никаких обещаний."
 
-                pov "You regret your life choises."
+                pov "Ты сожелеешь о своём жизненном выборе."
 
                 jump leave
 
@@ -3769,21 +3766,21 @@ label secret:
         hide shin3
         show shin6 at left
 
-        b "'What's wrong?'"
+        b "'Что-то не так?'"
 
         hide sou3
         show sou1 at right
 
-        c "'You know it's nothing. Just an urgent thing that came up.'"
+        c "'Ты же знаешь, что ничего. Просто возникла срочная проблема.'"
 
-        c "'I need to leave for a bit.'"
+        c "'Я должен уйти на некоторое время.'"
 
-        b "'Oh, should I... head back home and return tomorrow?'"
+        b "'Ох, должен ли я... вернуться домой и прийти завтра?'"
 
         hide sou1
         show sou2 at right
 
-        c "'No, it's alright. You can stay for the night. I'll be back soon, I just need to meet up with my boss. They just can't get enough of me...'"
+        c "'Нет, всё в порядке. Ты можешь остаться здесь на ночь. Я скоро вернусь, просто нужно встретиться с моим боссом. Они просто не могут получить достаточного от меня...'"
 
         hide shin6
         show shin1 at left
@@ -3793,46 +3790,46 @@ label secret:
         hide sou2
         show sou1 at right
 
-        c "'You should print out the cards just in case. And you should practise keeping a straight face so no one knows which card you have.'"
+        c "'Ты должен распечатать карты, кстати. И стоит попрактиковаться держать холоднокровное лицо, чтобы никто не знал, какая карта у тебя.'"
 
-        c "'It's very important! You might be cute, but this game depends on a right strategy. You can't win just with your cuteness.'"
+        c "'Это очень важно! Ты можешь быть милым, но исход этой игры зависит от правильной стратегии. Ты не можешь выйграть только с твоей очаровательностью.'"
 
         hide shin1
         show shin5 at left
 
-        b "'...! I-I'm not..!'"
+        b "'...! Я-я не..!'"
 
         hide sou1
         show sou5 at right
 
         play sound extend1
 
-        c "'You are. Alright! Now be a good boy and use the flash drive to print out the cards. You know where the printer is. I'll be back in an hour!'"
+        c "'Нет, ты такой. Итак! Будь хорошим мальчиком и используй USB-флеш-накопитель для распечатки карт. Ты знаешь, где находится принтер. Я вернусь через час!'"
 
         hide shin5
         show shin6 at left
 
-        b "'W-wait, which f-...'"
+        b "'П-погоди, какая из-...'"
 
         hide sou5 with dissolve
 
         play sound asioto2
 
-        pov "Before you could finish your question, your friend cheerfully waves at you and quickly leaves the room."
+        pov "До того, как ты мог закончить вопрос, твой друг дружелюбно помахал тебе и быстро покинул комнату."
 
         hide shin6 with dissolve
 
-        pov "For some reason, the air feels heavier when you're alone."
+        pov "По какой-то причине, воздух ощущается тяжелее, когда ты один."
 
-        pov "It's better than staying at home, but..."
+        pov "Это лучше, чем остаться дома, но..."
 
-        pov "No, it's not the time to think about it. But you can't think about the task your friend gave you too."
+        pov "Нет, не время думать об этом. Но ты не можешь не думать о заданий, которую дал вам ваш друг."
 
         pov ". . ."
 
-        pov "After the door closes, you get up from your chair."
+        pov "После того, как дверь закрылась, ты встал со своего стула."
 
-        pov "Without thinking twice you go to your friend's computer."
+        pov "Не думая дважды, ты подошёл к компьютеру твоего друга."
 
         play music tansaku4 fadein 2
 
@@ -3840,25 +3837,25 @@ label secret:
 
         pov ". . ?"
 
-        b "(He left the computer on? Usually, he doesn't...)"
+        b "(Он оставил его включённым? Обычно, он так не делает...)"
 
-        pov "The anxiety is slowly rising yet again, but for now you're able to keep your hands from shaking. Maybe it's worth to check out the flash drive he told you about?"
+        pov "Тревога подступает снова, но на этот раз, ты способен сдержать свои руки от дрожания. Может быть стоит проверить USB-флеш-накопитель, о котором он говорил?"
 
         scene tense1blur with dissolve
 
         show flash with dissolve
 
-        pov "There are... numbers on it? Perhaps it's just the flash drives' series number from your friend's work."
+        pov "На нём...есть цифры? Наверное, это просто серийный номер USB-флеш-накопителя с работы вашего друга."
 
         stop music fadeout 2
 
-        pov "What's more interesting... Is there any important info on it?"
+        pov "Что намного интереснее... Есть ли на нём важная информация?"
 
         hide flash with dissolve
 
         scene tense1 with dissolve
 
-        pov "Not thinking too much into it, you just plug the USB and... Expect some kind of a miracle."
+        pov "Не слишком много думая об этом, ты просто подключил его и.. Ожидал какого-то рода волшебства."
 
         scene tense3 with dissolve
 
@@ -3876,27 +3873,27 @@ label secret:
 
         pov ". . !"
 
-        pov "OK, God, this is so much worse than you could have imagined. You don't even remember posing for a photo like that."
+        pov "Окей, Боже, это намного хуже, чем ты мог представить. Ты не помнишь, чтобы позировал для такой фотографии."
 
-        pov "Nothing important... At all..."
+        pov "Ничего важного... совсем..."
 
-        pov "You make a quiet, yet displeased growl and put the flashdrive back on the table."
+        pov "Ты издаешь тихое, но недовольное рычание и кладешь флешку обратно на стол."
 
         play music tansaku4 fadein 2
 
         scene souroom with dissolve
 
-        b "'Hm... Where was the printer again..? There's so many rooms here, I always get lost in them, aha...'"
+        b "'Хм... Итак, где находится принтер..? Здесь так много комнат и я всегда заблуждаюсь в них, аха...'"
 
-        pov "You HATE going to the corridor, and you like going through other's stuff even less."
+        pov "ты НЕНАВИДЕШЬ идти по коридору, и тебе еще меньше нравится рыться в чужих вещах."
 
-        pov "Which is funny considering how you just went through your friend's workplace."
+        pov "Что явно смешно, ведь недавно, ты рылся в компьютере своего лучшего друга"
 
-        pov "With a deep sigh you gather courage to leave the room."
+        pov "С глубоким вздохом, ты собираешь всё мужество, что у тебя есть и покидаешь комнату."
 
         scene cor1 with dissolve
 
-        pov "The closest door is right across the corridor. You don't have a choice but to try to turn the doorknob."
+        pov "Ближайшая дверь находится прямо через коридор. У тебя нет выбора, кроме как попытаться повернуть дверную ручку."
 
         play sound doorlocked
 
@@ -3904,15 +3901,15 @@ label secret:
 
         pov ". . ?"
 
-        pov "It's locked."
+        pov "Это закрыто."
 
-        pov "Great. Now you have to explore the whole flat."
+        pov "Отлично. Теперь ты должен исследовать всю квартиру."
 
-        pov "Usually, you spend much more time in here than at your place, and yet you know nothing of how your friend lives. What does he even have in there..."
+        pov "Обычно, ты проводишь гораздо больше времени здесь, чем в своём доме, и всё же ты ничего не знаешь о том, как живёт твой друг. Что у него вообще есть здесь..."
 
-        pov "And you cannot remember where the printer is for the life of you."
+        pov "И ты не сможете вспомнить, где находится принтер, ни за что на свете."
 
-        pov "You go and check out the other doors."
+        pov "Ты идёшь и проверяешь другие двери."
 
         scene cor2 with dissolve
 
@@ -3922,61 +3919,61 @@ label secret:
 
         pov ". . ."
 
-        pov "Locked."
+        pov "Закрыто."
 
         play sound doorlocked
 
         pov ". . ."
 
-        pov "Locked."
+        pov "Закрыто."
 
         play sound doorlocked
 
         pov ". . ."
 
-        pov "This one is locked too..."
+        pov "Эта тоже закрыта..."
 
         pov ". . ."
 
         pov ". . ."
 
-        pov "Only one door is left unchecked, but..."
+        pov "Только одна дверь остёться непроверенной, но..."
 
-        pov "You really don't want to come near it. It's dark and creepy as in some kind of a horror film, and something in that door... makes you shiver."
+        pov "Ты правда не хочешь подходить к ней. Там темно и жутко, как в каком-то фильме ужасов, и что-то в этой двери... заставляет тебя дрожать."
 
-        pov "But you don't understand why..."
+        pov "Но ты не ебёшь почему..."
 
         stop music fadeout 2
 
         pov ". . ."
 
-        pov "Trying to muffle your fear, you come closer to the door."
+        pov "Попытаясь побороть свой страх, ты подходишь ближе."
 
         scene door1 with dissolve
 
         play music carinterior1 fadein 1
 
-        pov "...It's locked with a password? It really is a horror movie."
+        pov "...Чё блять? Пароль? Реально как в фильме ужасов."
 
-        pov "The printer is probably not behind that door."
+        pov "Значит, принтер не здесь."
 
-        pov "But... You remember your friend talking about a server room..."
+        pov "Но... Ты помнишь, что твой ёбырь рассказывал о комнате на севере..."
 
-        pov "Something like ''Password-protected server room with important equipment inside.'' and ''It's locked so you won't go in and make a mess out of the cables.''"
+        pov "Что-то вроде ''Северная комната защищённая паролем, ведь внутри находится важное оборудование.'' и ''Она заперта, так что, хуй ты войдёшь туда и испортишь мои кабели.''"
 
-        pov "''Important equipment...''"
+        pov "''Важное оборудование...''"
 
-        pov "Maybe... it's in there? But you don't remember hearing the password."
+        pov "Может быть... он всё же здесь? Но ты не помнишь, чтобы слышал пароль до этого."
 
-        pov "Perhaps that's why he left his computer on?"
+        pov "Может быть поэтому, он оставил свой компьютер включённым?"
 
-        pov "You roll your eyes in annoyance. Feels like you're in a quest room."
+        pov "Ты закатил свои глаза в раздражении. Словно, ты находишься на квесте."
 
-        pov "Your friend loves messing with you and make you work. You should try and look for a password."
+        pov "Твой друг любит потешаться над тобой и аставлять работать. Ебанный обдолбыш, заняться ему нечем. В любом случае, ты должен постараться и найти пароль."
 
-        pov "It's not like you have a choice."
+        pov "Не похоже на то, словно у тебя есть выбор."
 
-        pov "Looking at the door for the last time, you go back to the main room."
+        pov "Последний раз посмотрев на дверь, ты возращаешься обратно."
 
         stop music
 
@@ -3988,28 +3985,28 @@ label secret:
 
         play music tansaku4 fadein 2
 
-        pov "Hm, where to start? Maybe he left the password written somewhere?"
+        pov "Хм, с чего же начать? Может быть, он оставил пароль, записанный где-то?"
 
         label search:
 
         menu:
-            "Check the flash drive":
+            "Проверить USB-флеш-накопитель":
 
                 show tense1blur with dissolve
                 show flash zorder 1 with dissolve
 
-                pov "You pick up the flash drive again."
+                pov "Ты посмотрел на USB-флеш-накопитель снова."
 
-                pov "It has a number engraved on it. Maybe it's the serial number."
+                pov "На нём были числа. Может быть, это серийный номер."
 
                 menu:
-                    "See what's on it again":
+                    "Посмотреть, что на нём снова":
 
                         scene tense1 with dissolve
 
                         stop music fadeout 2
 
-                        pov "You decide not to waste your time, so you connect the USB once again."
+                        pov "Ты решил не терять времени, так что подключил его ещё раз."
 
                         scene tense3 with dissolve
 
@@ -4025,95 +4022,95 @@ label secret:
                         scene tense2
                         pause(1.0)
 
-                        pov "You sigh and look away before deciding to check the image closer."
+                        pov "Ты вздыхаешь и отводишь взгляд, прежде чем разглядеть изображение поближе."
 
-                        pov "Now you're SURE you did not pose for a photo like that."
+                        pov "Теперь ты ТОЧНО, уверен, что не позировал для этой уебанской фотки."
 
-                        b "'Version #198.01... Whatever this could mean. Probably comes from camera's settings. Or..?'"
+                        b "'Версия #198.01... Хуй знает, что это значит. Может быть, это исходит из настроек камеры. Или..?'"
 
-                        pov "You just don't question your friend's actions anymore."
+                        pov "Ты просто больше не подвергаешь сомнению действия своего друга."
 
-                        pov "Whatever."
+                        pov "Поебать."
 
                         play music tansaku4 fadein 2
 
                         jump search
-                    "Nah...":
+                    "Нах...":
 
 
-                        pov "Yeah, it's probably better this way. You don't really feel like seeing another photo of yours."
+                        pov "Да, наверное так лучше. Ты не хочешь увидеть ещё свою фотографию, такого рода."
 
-                        pov "Why is your friend so obsessed with them anyway? Always feels like he's mocking you."
+                        pov "Почему твой друг так одержим ими? Всегда ощущается, словно он потешается над тобой."
 
                         hide flash with dissolve
 
                         jump search
-            "Check the notepad":
+            "Проверить записки":
 
 
                 show tense1blur with dissolve
                 play sound book2
                 show notebook zorder 1 with dissolve
 
-                b "'What even is... this language?'"
+                b "'Чё это... за язык вообще?'"
 
-                pov "Your friend has always bragged to you about his language skills, but..."
+                pov "Он всегда хвастался своими знаниями о языках, но..."
 
-                pov "You have no idea what this says. Maybe it's something... important... if he decided to cipher it like this."
+                pov "Ты не знаешь, что это значит. Может быть что-то... важное... раз он решил зашифровать это так."
 
-                pov "There's lots of numbers all over the place. Maybe it's a password note he left for you?"
+                pov "Здесь дохуя разных номеров. Может быть, здесь есть пароль оставленный для меня?"
 
-                pov "There's too much numbers... Eh, there was no way he would let this go easy for you."
+                pov "Здесь пиздецки много номеров... Эх, он ни за что не позволил бы тебе так легко это сделать."
 
-                pov "There's probably no harm in trying these numbers out... "
+                pov "Вероятно, нет ничего плохого в том, чтобы опробовать эти цифры... "
 
                 hide notebook with dissolve
 
                 jump search
-            "Look under the table":
+            "Посмотреть под стол":
 
 
-                pov "Why would you even do this? Okay..."
+                pov "Зачем вообще делать это? Ладно..."
 
-                pov "Kneeling down on the floor, you check the only drawer. It's not locked."
+                pov "Опустившись на пол, ты решил проверить единственный ящик там. Он не заперт."
 
-                pov "You open it and eagerly put your hand inside, seeking for... something. And something you find."
+                pov "Ты открываешь его и с нетерпением просовываешь туда руку, надеясь отыскать... что-то. И ты действительно что-то нашёл."
 
                 show tense1blur with dissolve
                 show photo zorder 1 with dissolve
 
                 b "'..!'"
 
-                b "'This is...'"
+                b "'Это...'"
 
-                pov "Oh, you remember this well enough."
+                pov "Ох, ты помнишь это достаточно хорошо."
 
-                pov "That day you went to walk on the beach together, but it was a cold day. To this day you wonder why did you forget to put your scarf on."
+                pov "В тот день вы вместе пошли гулять по пляжу, но было холодно. Ты до сих пор вы удивляешься, почему вы забыл надеть свой шарф."
 
-                pov "Fortunately, your friend was generous enough to give you his own scarf without questioning. It was warm and soft, but..."
+                pov "К счастью, твой друг был достаточно щедрым, чтобы дать свой шарф без вопросов. Он был тёплым и мягким, но..."
 
-                pov "The thing you remember the most is the content you felt, surrounding by his sce-..."
+                pov "Больше всего ты помнишь, так это то, что чувствовал в тот момент и окружающий за-..."
 
                 pov ". . ."
 
-                pov "Your face turns red. You stop remeniscing and put the photo back."
+                pov "Твоё лицо стало красным (ебанные соушины, тряпками мокрыми пизжу их). Ты перестаёшь представлять и просто ложишь фотографию обратно."
 
                 hide photo with dissolve
                 scene tense1 with dissolve
 
-                pov "Why does he keep it in here? Everyone has their oddities, but..."
+                pov "Почему он вообще держит это здесь? У каждого есть свои странности, но..."
 
-                pov "Ah... It's useless to question it..."
+                pov "Ах... Бесмысленно сомневаться в этом..."
 
-                pov "You get up and cough nervously."
+                pov "Ты встаёшь и нервно кашляешь."
 
-                pov "Maybe, this moment was one of the happiest for you."
+                pov "Может быть, это был самый счастливый момент для тебя."
 
                 jump search
-            "Go back to the locked door":
+            "Вернуться к запертой двери":
 
 
-                pov "Alright, you saw enough. You looked over the numbers once again and go back to the corridor."
+                pov "Итак, ты увидел достаточно. Ты посмотрел на номера снова и пошёл обратно в коридор."
 
                 stop music fadeout 2
 
@@ -4125,21 +4122,21 @@ label secret:
 
                 play music carinterior1 fadein 2
 
-                pov "Such an unpleasant door... You feel uneasy just from looking at it."
+                pov "Такая стрёмная дверь... Ты чувствуешь себя неудобно, просто смотря на неё."
 
-                b "'I should try and enter the password...'"
+                b "'Я должен попытаться и ввести пароль...'"
 
                 jump passw
 
     label passw:
 
         menu:
-            "Try entering the code":
+            "Попытаться ввести пароль":
 
                 label codeinput:
 
                     python:
-                        password = renpy.input("ENTER PASSWORD: (five-digit number)", length=32)
+                        password = renpy.input("ВЕСТИ ПАРОЛЬ: (пятизначный код)", length=32)
                         password = password.strip()
 
                     if password in ["19801"]:
@@ -4150,17 +4147,17 @@ label secret:
 
                         b "'. . !'"
 
-                        b "'It worked...'"
+                        b "'Это сработало...'"
 
                         b "'. . .'"
 
-                        pov "This small victory makes you happy, and yet you don't want to go inside..."
+                        pov "Эта маленькая победа делает тебя счатливыми, но всё же, ты не хочешь заходить внутрь..."
 
-                        pov "You are afraid. But... when was the last time you felt no fear staying here?"
+                        pov "Тебе страшно. Но... когда ты, в последний раз, не чувствовал страха остаться здесь?"
 
                         pov ". . ."
 
-                        pov "Keeping yourself together, you turn the doorknob and walk into the room."
+                        pov "Держа себя в руках, ты провернул дверную ручку и вошёл внутрь."
 
                         jump inroom
                     else:
@@ -4169,18 +4166,18 @@ label secret:
                         play sound select04
                         pov ". . ."
 
-                        pov "Seems like that wasn't it..."
+                        pov "Похоже, здесь что-то не так..."
 
                         menu:
-                            "Try again":
+                            "Попытаться снова":
 
                                 jump codeinput
-                            "Check the room again":
+                            "Проверить комнату снова":
 
 
-                                b "'Maybe I missed something... I should check the room once again.'"
+                                b "'Может быть, я пропустил что-то... Мне следует проверить комнату снова.'"
 
-                                b "'Maybe I should write the numbers down, aha...'"
+                                b "'Может быть, я должен записать цифры, аха...'"
 
                                 scene souroom with dissolve
                                 pause(1.0)
@@ -4191,18 +4188,18 @@ label secret:
                                 play music tansaku4 fadein 2
 
                                 jump search
-            "Not yet...":
+            "Не сейчас...":
 
 
 
 
 
 
-                pov "You're not ready yet."
+                pov "Ты ещё не готов."
 
-                b "'Maybe I missed something... I should check the room once again.'"
+                b "'Может быть, я пропустил что-то... Мне следует проверить комнату снова.'"
 
-                b "'Maybe I should write the numbers down, aha...'"
+                b "'Может быть, я должен записать цифры, аха......'"
 
                 scene souroom with dissolve
                 pause(1.0)
@@ -4228,31 +4225,31 @@ label secret:
 
         scene funroom with dissolve
 
-        b "'What's... All this...'"
+        b "'Что... ЭТО такое...'"
 
-        pov "It's... Definetely not a server room. And no printers in sight."
+        pov "Это... Определённо не северная комната. И здесь нет принтера."
 
-        pov "You want to run away, yet... You do nothing."
+        pov "Тебе хочется убежать, но... Ты ничего не делаешь."
 
-        pov "Were you even meant to come here in the first place? You're not so sure now. Yet..."
+        pov "Ты сначала должен был прийти сюда? Ты ещё не знаешь. Пока что..."
 
-        pov "Some kind of weird interest forces you to make another step, deeper into the unknown."
-
-        pov ". . ."
-
-        pov "There's lots of different of instruments inside... Tables, boxes... All of this looks way too unfamiliar to you."
-
-        pov "Is that... an operating table in the corner of the room? Nah. Probably not. Even if it was, it looks like it's somewhat covered in dust. It feels weird, considering how clean the whole appartment is."
-
-        pov "It looks like some kind of a storeroom. The air feels way too heavy, too..."
-
-        pov "You're feeling quite bold today... So you decide to inspect the room some more, instead of running away immediately."
+        pov "Некоторые странные вещи, заставляют вас сделать ещё один шаг вперёд, глубже в неизвестность."
 
         pov ". . ."
 
-        pov "The only thing that's not covered in dust is a large piece of cloth on the table."
+        pov "Здесь куча различных инструментов... Столы, ящики... Всё это выглядит совершенно незнакомым для тебя."
 
-        pov "You feel like you don't have a choice, when you decide to get closer to it."
+        pov "Это... операционный стол в углу комнаты? Мьех. Наверное, нет. Даже если это было оно, то оно всё равно покрыто пылью. Это немного страно, учитывая, насколько чиста вся квартира."
+
+        pov "Это выглядит словно как кладовая. Воздух ощущается довольно тяжёлым тоже..."
+
+        pov "Ты чувствуешь себя пиздецки смелым... Настолько, что решаешь, ещё немного исследовать комнату, вместо того, чтобы незамедлительно убежать."
+
+        pov ". . ."
+
+        pov "TЕдиственная вещь, что не покрыта пылью, так это большой кусок белой ткани."
+
+        pov "Ты чувствуешь, словно у тебя нет выбора, когда решаешь приблизиться к нему."
 
         stop music fadeout 2
 
@@ -4260,64 +4257,64 @@ label secret:
 
         b "'. . .'"
 
-        b "'This feels familiar, but...'"
+        b "'Это ощущается знакомо, но...'"
 
         play music heart_beat01 fadein 2
 
-        b "'Ugh...'"
+        b "'Агх...'"
 
-        pov "It feels like your hand is moving on it's own."
+        pov "Твоя рука движется сама по себе."
 
         scene bg black with dissolve
 
-        pov "You close your eyes for a couple of seconds... But when you open them..."
+        pov "Ты закрываешь свои глаза на пару секунд... Но когда снова открываешь..."
 
         pause(1.5)
 
         scene surprise2 with dissolve
         pause(1.0)
 
-        pov "You never expect to see... yourself."
+        pov "Ты не ожидал увидеть... себя."
 
         show surprise2 with hpunch
         play sound accent401
 
-        b "'Agh!!'"
+        b "'Ебучий случай...'"
 
-        b "'N... No...'"
+        b "'Н... Нет...'"
 
         stop music
         play music heartbeat012
 
-        pov "You gasp loudly, taking a few steps back."
+        pov "Ты громко вздыхаешь и делаешь пару шагов назад."
 
-        pov "You should run.{w=0.5} You should run.{w=0.5} You should run."
+        pov "Ты должен бежать.{w=0.5} Ты должен бежать.{w=0.5} Ты должен бежать."
 
-        pov "Yet... You can't."
+        pov "Нет... Ты не можешь."
 
-        pov "It feels like you're hypnotized."
+        pov "Такое чуство, словно ты под гипнозом."
 
         scene head1 with dissolve
 
-        pov "You can't come up with an explanation. Not anymore."
+        pov "Ты не можешь придумать объяснения. Не сейчас."
 
-        pov "However, you notice some cables coming out of the neck... At least...{w=0.5} It's not a real head."
+        pov "Однако, ты заметил кабели выходящие из твоей шеи... В конце концов...{w=0.5} Это не настоящая голова."
 
         show head2
         stop music
         play music heartbeat013
 
-        pov "You feel like you're going to throw up... You really can't explain all this to yourself."
+        pov "Ты чувствуешь, словно тебя сейчас вырвет... Ты правда не можешь объяснить всё это себе."
 
-        b "'Why would... Even...'"
+        b "'Почему... иначе...'"
 
-        pov "You're taking another couple of steps back, until... You bump into...{w=0.5} Something."
+        pov "Ты делаешь ещё пару шагов назад, до того... Как сталкиваешься...{w=0.5} С чем-то."
 
         stop music
 
         show head3 zorder 1 with dissolve
 
-        pov "You"
+        pov "Ты"
 
         pov "{size=+3}Don't{/size}"
 
@@ -4329,31 +4326,31 @@ label secret:
 
         pov "{size=+18}Back{/size}"
 
-        c "'Shin...'"
+        c "'Любопытной Варваре на базаре нос оторвали...'"
 
         pov "{size=-10}no.{/size}"
 
         play music darkness fadein 3
 
-        c "'Dear Shin... What are you doing here?'"
+        c "'Дорогой Шин... Что ты здесь делаешь?'"
 
-        c "'Haha... You ruined it...'"
+        c "'Хаха... Ты разрушил это...'"
 
-        b "'...P-please...'"
+        b "'...П-пожалуйста...'"
 
-        c "'You ruined the whole surprise! I've been practising {color=#f00}sculpting{/color} lately, you see...'"
+        c "'Ты испортил весь сюрприз! Я занимаюсь {color=#f00}скульптурированием{/color} давно, ты видишь...'"
 
-        c "'Do you like it? I spent so much time on it... Placing each birthmark at it's correct place...'"
+        c "'Тебе это нравится? Я потратил много времени на это... Размещение каждой родинки в правильном месте...'"
 
         b "'. . .'"
 
-        pov "It sure as hell doesn't look like a sculpture."
+        pov "Да блять, естественно, это не выглядит как скульптура."
 
-        pov "You never touched the... the whatever it was, but it surely wasn't made out of any kind sculpting material."
+        pov "Ты никогда не трогал... что это бы ни было, но он, конечно, не был создан из какого-то либо материала для скульптуры."
 
-        pov "The head looked so... real."
+        pov "Голова выглядила настолько... настоящей."
 
-        pov "Before you could aknowledge it, your friend suddenly grabs you from behind."
+        pov "Прежде чем вы успели это осознать, ваш друг внезапно хватает вас сзади."
 
         stop music
         play music ghost_sigh fadein 2
@@ -4361,19 +4358,19 @@ label secret:
         scene grab1 with hpunch
         play sound earth3
 
-        pov "Holding you in a death grip, he pushes you against the dusty wall."
+        pov "Держа тебя в мёртвой хватке, он прижимает тебя к пыльной стене."
 
-        pov "You're barely breathing at this point."
+        pov "Ты едва можешь дышать."
 
-        b "'H-Hiyori!..'"
+        b "'Х-Хиёри!..'"
 
-        b "'P-please, I... I have no idea what t-that was but... I won't tell anyone!...'"
+        b "'Х-Хиёри, слышишь, прости! Я... Я не хотел это всё устраивать... Нет, я не пидорас, ну пойми, ну прости наконец, ради бога!...'"
 
-        b "'Just let me go... You're scaring me!'"
+        b "'Отпусти меня, пожалуйста... Ты пугаешь меня!'"
 
-        b "'I'll just go h-home now, okay?..'"
+        b "'Я просто сейчас п-пойду домой, хорошо?..'"
 
-        c "'Shin... Why did you have to mess everything up?'"
+        c "'Шин... Почему постоянно всё портишь?'"
 
         show grab2
 
@@ -4385,15 +4382,15 @@ label secret:
 
         show grab2
 
-        pov "The pain is sharp, yet it stops the next second. You scream outloud anyway."
+        pov "Боль острая, но в следующую секунду она прекращается. Ты все равно кричишь вслух."
 
-        b "'W-what are you..?!'"
+        b "'ЧЁ ТЫ ТВОРИШЬ..?!'"
 
-        b "'Hiyori, you don't-... You don't-...'"
+        b "'Хиёри, ты не можешь-... ты не-...'"
 
-        c "'It's okay... Don't resist it. Ugh... You've made such a mess in here, too.'"
+        c "'Да всё окусики... Не сопротивляйся. Аргх... Ты навёл такой бардак здесь, тоже.'"
 
-        b "'I ba... Barely... Touched...'"
+        b "'Я е... Едва... Касаюсь...'"
 
         stop music fadeout 2
 
@@ -4403,31 +4400,31 @@ label secret:
         scene unfunroom1 with dissolve
         play music heart_beat01 fadein 1
 
-        pov "Your tongue is already failing you. The effect of the medicine is insane... It's been only a couple of seconds, yet it already feels so hard for you to make a sound."
+        pov "Твой язык уже не работает. Эффект от лекарства безумный... Прошло лишь пару секунд, но тебе уже трудно произносить звуки."
 
         scene unfunroom3 with dissolve
 
-        pov "Your legs give up. Before you could fall flat on the floor, your friend catches you and holds you close. You can't even hold back onto him. Your hands are completely numb."
+        pov "Твои ноги отказываются слушаться. Прежде чем ты успел упасть на пол, твой друг подхватил тебя и прижал к себе. Ты даже не можешь отодвинуться от него. Твои руки совершенно онемели."
 
         scene unfunroom4 with dissolve
         show souspooky zorder 2 with dissolve
 
-        c "'Shh... We didn't have to do this, you know? You just have to stop sticking your nose where it doesn't belong.'"
+        c "'Шшш... Мы не нужно было это делать, знаешь ли? Тебе просто нужно прекратить совать свой нос куда не следует.'"
 
         show unfunroom5 with dissolve
 
-        c "'Well, it's done already... To think you could do this {color=#f00}twice{/color} in one day... You really are nosey, you know?'"
+        c "'Ну чтож, почти всё сделано...Не мог подумать, что мог сделать это {color=#f00}дважды{/color} в один день... Ты очень любопытный, знаешь ли?'"
 
         show unfunroom6 zorder 1 with dissolve
         hide unfunroom5
 
-        pov "He carries you through the room, slowly bringing you closer to the... operating table you've seen before. The only resistance you can afford is a weak moan of protest."
+        pov "Он несет тебя через комнату, медленно приближая к... операционному столу, который ты видела раньше. Единственное сопротивление, которое вы можете себе позволить, - это слабый стон протеста."
 
         scene bg black with dissolve
         pause(1.5)
         stop music fadeout 1
 
-        pov "Your friend turns the blinding lights on. But you can't even close your eyes."
+        pov "Твой друг включает слабый свет, но даже так, ты не можешь закрыть глаза."
 
         scene soulook1 with dissolve
         pause(1.0)
@@ -4436,13 +4433,13 @@ label secret:
 
         show soulook2
 
-        c "'You know... I really am upset about all this.'"
+        c "'Ебать...Знал бы ты, как ты меня заебал.'"
 
-        c "'If I wipe my mistakes off with months or even weeks between the incidents, nothing bad would happen... But this happened again way too fast.'"
+        c "'Если я сотру свои ошибки за месяцы или даже недели между инцидентами, ничего плохого не произойдет... Но это произошло снова слишком быстро.'"
 
-        c "'Why did you even go here in the first place? Ugh, Shin...'"
+        c "'Какого чёрты ты всегда приходишь сюда? Аргх, Шин...'"
 
-        c "'I really don't want to do this.'"
+        c "'Я действительно не хочу этого делать.'"
 
         hide soulook2
         show soulook1
@@ -4452,64 +4449,64 @@ label secret:
         hide soulook1
         show soulook3
 
-        c "'But no worries! You might forget a bit too much after this, maybe... But it's okay! I'll be riiight here to help you remember everything. Well, at least for the most part.'"
+        c "'Но не волнуйся! Ты можешь забыть немного больше, чем следует, наверное... Но всё хорошо! Я буду пряяямо здесь, чтобы помочь тебе всё вспомнить. Ну, по крайне мере, почти в большинство случаев.'"
 
         hide soulook3
         show soulook4
 
-        c "'Honestly, I should be more upset about having to explain you the card game once again!'"
+        c "'И ебать не встать, мне снова придётся объяснять тебе эту блядскую карточную игру!'"
 
-        c "'I have to prepare you well, Shin... Otherwise it's a loss for both of us.'"
+        c "'Я должен хорошо тебя подготовить, Шин... Иначе, это потеря для нас обоих.'"
 
         c ". . ."
 
         hide soulook4
         show soulook3
 
-        c "'Oh, this look on your face...'"
+        c "'Ох, это взгляд...'"
 
         c "'. . .'"
 
-        c "'Shin...'"
+        c "'Шин...'"
 
-        c "'Now, now, you don't have to cry... This can be fixed easily! It's what's best for both of us, you know.'"
+        c "'Ну, ну, тебе не нужно плакать... Это легко исправить! И это будет лучше для нас обоих, ты знаешь.'"
 
         hide soulook3
         show soulook5
 
-        c "'See? It's not gonna hurt! At least, too much. I still have to adjust the settings of the device...'"
+        c "'Видишь? Это не так больно! По крайне мере, не так уж и сильно. Я всё ещё должен настроить устройство...'"
 
         scene sounolook with dissolve
 
-        pov "He takes his time setting everything up, humming a tune in the process."
+        pov "Он не торопится все настраивать, напевая при этом мелодию."
 
-        pov "You don't even want to see the device in question... You just want for this to end already."
+        pov "Вы даже не хотите видеть устройство, о котором идет речь... Ты просто хочешь, чтобы это уже закончилось."
 
         scene soulook3 with dissolve
 
-        c "'But it will fix everything for sure... At least for now.'"
+        c "'Но это наверняка все исправит... По крайней мере, сейчас.'"
 
-        c "'You're so pale... Do you want for me to hold your hand?'"
+        c "'Ты такой бледный... Хочешь, чтобы я подержал тебя за руку?'"
 
         scene soulook6 with dissolve
 
-        c "'There! Nothing to worry about!'"
+        c "'Опля! Не о чём волноваться!'"
 
         c "'. . .'"
 
-        c "'...You know... You look so wonderful like this.'"
+        c "'...Ты знаешь... Ты выглядишь таким (плиз цензура соушинов) сейчас.'"
 
-        c "'Too bad I'll have to resist the urge to use this device on you again... In the nearest future, at least. Might turn your brain into mush!'"
+        c "'Жаль, что мне придется сопротивляться желанию снова использовать это устройство на тебе... По крайней мере, в ближайшем будущем, это может превратить твой мозг в кашу!'"
 
-        c "'And I very much, honestly, do not wish for that.'"
+        c "'И я очень, если честно, не желаю этого.'"
 
         c "'. . .'"
 
-        c "'Hmm... I'll turn it on on count of three, alright?'"
+        c "'Хмм... Я включу его на счёт три, хорошо?'"
 
-        c "'Haha... Don't look at me like that... I'm simply taking care of you, like a good friend should!'"
+        c "'Хаха... Не смотри на меня так... Я просто забочусь о тебе, как и должен хороший друг!'"
 
-        c "'Ok, one...{nw}'"
+        c "'Ладно, раз...{nw}'"
 
         stop music
 
@@ -4525,7 +4522,7 @@ label secret:
         pause(0.1)
         hide bg black
 
-        pov "He turns the device on immediatelly. Sharp, paralyzing pain rushes through your body and-"
+        pov "Он включает устройство сразу же. Острая, парализующая боль пронзает твоё тело и-"
 
         scene bg black
         pause (3.0)
@@ -4538,11 +4535,11 @@ label secret:
 
         "'... {w=0.5}up{w=0.5} ...'"
 
-        "'P-please!'"
+        "'П-пожалуйста!'"
 
-        "'Wake up...'"
+        "'Проснись...'"
 
-        a "> You open your eyes. It's the monitor room."
+        a "> Ты открываешь глаза. Это комната с мониторами."
 
         play music denpa fadein 3
 
@@ -4552,110 +4549,110 @@ label secret:
         show sad5
         with dissolve
 
-        a "> You see your former self again."
+        a "> Ты снова видишь прежнего себя."
 
-        "'Are you alright?.. You're so pale!.. Please, just... drink some water...'"
+        "'Ты в порядке?.. Ты такой бледный!.. П-пожалуйста, просто... попей немного воды...'"
 
-        a "> You ignore his recommendations and inhale deeply instead, trying to get rid of your sudden hyperventilation."
+        a "> Ты игнорируешь его рекомендации и просто глубокго вздыхаешь, пытаясь избавиться от внезапного учащенного дыхания."
 
-        a "'...Do you remember it?'"
+        a "'...Ты помнишь это?'"
 
         hide sad5
         show sad1
 
         "'..?'"
 
-        "'Remember what?'"
+        "'Помню что?'"
 
-        a "'The ''sculpture''. Don't play dumb with me. You know, we think the same. Or we used to, at least.'"
+        a "'''Скульптуры''. Не пизди. Ты знаешь, мы мыслим одинаково. Или должны были, по крайне мере.'"
 
         hide sad1
         show sad2
 
-        "'I...'"
+        "'Я...'"
 
-        "'I really don't know what your talking about... Did this conversation we had... trigger something in you?..'"
+        "'Я правда не знаю, о чём ты говоришь... Разговор ранее... он вас чем-то задел?..'"
 
-        a "'Sure did. No wonder he never put this info in your code, aha...'"
+        a "'Ну, конечно. Неудивительно, что он не вложил эту информацию в ваш код , аха...'"
 
-        a "'Anyway.'"
+        a "'В любом случае.'"
 
-        a "'I wonder if it's still hidden somewhere in your data. I know it was a doll now, but... I wonder how much I have forgotten.'"
+        a "'Интересно, все еще ли это скрыто где-то в ваших данных? Теперь я знаю, что это была кукла, но... Интересно, как много я забыл.'"
 
         hide sad2
         show sad1
 
         "'. . .'"
 
-        a "'Hope you don't mind if I look into your code a li-'"
+        a "'Надеюсь, ты не возражаешь, если я посмотрю в твой код-'"
 
         stop music
 
-        m "'Hey, it's no use...'"
+        m "'Чё еблан? Шлёпки надел и попиздовал нахуй!'"
 
         scene bg black with dissolve
 
-        a "> This is when you feel the presense of another person in the room. It was expected. And you know who it is."
+        a "> Ты чувствуешь присутствие другого человека в комнате. Это было ожидаемо. И ты знаешь, кто это."
 
-        a "> Of course this could only be {color=#f00}his{/color} room."
+        a "> Кончено, ведь это {color=#f00}его{/color} комната."
 
-        a "> You're not going to look behind you. Not again."
+        a "> Ты не собираешься смотреть назад. Только не снова."
 
-        m "'Do you think I'm incompetent enough to leave such kind of information on the surface? Oh, Shin...'"
+        m "'Неужели вы думаете, что я настолько некомпетентен, чтобы оставлять такую информацию на поверхности? Ох, Шин...'"
 
         show hewo with dissolve
         pause(1.5)
 
-        m "'I did tell you to grab the truth with your own hands, but don't you think this is too much? Haha...'"
+        m "'Я действительно говорил тебе схватить правду своими собственными руками, но тебе не кажется, что это уже слишком? Хаха...'"
 
         a "> . . ."
 
-        m "'Nothing to say? So this is how you greet me. And to think I've missed you so much... That's a shame...'"
+        m "'Нечего сказать? Так вот как ты меня приветствуешь. И подумать только, я так по тебе скучал... Позорник...'"
 
-        a "{size=-10}> He's going to kill you. You can feel the bloodlust with every single fiber of your being.{/size}"
+        a "{size=-10}> Он собирается убить тебя. Вы можете чувствовать жажду крови каждой клеточкой своего существа.{/size}"
 
-        m "'Are you afraid? Now, you don't have to-'"
+        m "'Вы боитесь? Не думаю, что вам сейчас ну-'"
 
-        a "'Leave me alone. You can't do anything to me right now anyway.'"
+        a "'Нахуй иди. Ты ничего не можешь сделать со мной сейчас.'"
 
         m "'. . .'"
 
-        m "'I see...'"
+        m "'Я вижу...'"
 
-        m "'You did listen to me after all, Shin... It's a pleasant surprise.'"
+        m "'Вы слушали меня, конце в концов, Шин... Какой приятный сюрприз.'"
 
-        m "'Don't you think the others are looking for you already? You don't want them to get too suspicious, do you? Haha...'"
+        m "'Вам не кажется, что остальные уже ищут вас? Вы же не хотите становится подозрительным для них, не так ли? Хаха...'"
 
         a "'. . .'"
 
-        m "'Now, you've brightened up my mood yet again... You should leave for now.'"
+        m "'А теперь вы снова подняли мне настроение... Вам лучше будет уйти сейчас.'"
 
-        m "'But worry not! We'll finally have sooo much fun playing these games! I'd love to see how far you'd go...'"
+        m "'Но не волнуйся! Мы наконец-то мооожем весело провести время играя в эти игры! Я бы хотел посмотреть, насколько далеко ты зайдёшь...'"
 
         scene monitor with dissolve
 
         play music denpa fadein 2
 
-        a "> You shake his hands off your shoulders and get up. You don't look him in the face, but you know he's smiling."
+        a "> Ты стряхиваешь его руки со своих плеч и встаешь. Ты не смотришь ему в лицо, но знаешь, что он улыбается."
 
         show souwho with dissolve
 
-        m "'Did you even understand why you were able to know {color=#ffffff}this much{/color}? {w} That's only-{nw}'"
+        m "'Вы хотели бы понять, почему вам удалось узнать {color=#ffffff}так много{/color}? {w} Если только-{nw}'"
 
-        a "'Only because you've let me. Shut up.'"
+        a "'Только, потому что, ты мне позволил. Завались, ей богу.'"
 
         scene bg black with dissolve
 
-        a "> You close the doors behind you and slowly come back to your regular slouching as you walk away through the corridor."
+        a "> Ты закрываешь за собой дверь и медленно возвращаетесь к своей обычной сутулости, уходя по коридору."
 
-        a "> You can hear a quiet laugh coming from the room you've just visited."
+        a "> Ты можешь услышать тихий смех, доносящийся из комнаты, которую ты только что посетили."
 
         scene bg black with dissolve
         pause(2.0)
 
         stop music fadeout 3
 
-        "END 5"
+        "Концовка 5"
 
 
 
